@@ -1,4 +1,4 @@
-secomobile
+SeCo Mobile
 ==========
 
 Android Client for the Search Computing Project (http://www.search-computing.it/)
