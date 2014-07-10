@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="it.polimi.secomobile.ui"
+      android:versionCode="1" android:versionName="0.1">
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+<uses-sdk android:minSdkVersion="8"></uses-sdk>
+
+    <application android:name=".SeCoState" android:label="@string/app_name" android:icon="@drawable/secoicon">
+        <activity android:name=".Subjects"
+                  android:label="@string/app_name"
+                  android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|keyboardHidden" android:name="Results" ></activity>
+        <activity android:name="Map"></activity>
+        <activity android:name="History"></activity>
+        <activity android:name="Filter"></activity>
+        <activity android:name="Progress"></activity>
+        <activity android:configChanges="orientation|keyboardHidden" android:name="SearchAccPattern"></activity>
+        <activity android:configChanges="orientation|keyboardHidden" android:name="SearchInterface"></activity>
+        <activity android:configChanges="orientation|keyboardHidden" android:name="SearchMart"></activity>
+        <activity android:configChanges="orientation|keyboardHidden" android:name="Parameters"></activity>
+		<activity android:configChanges="orientation|keyboardHidden" android:name="TabTupleDetail"></activity>
+		<activity android:configChanges="orientation|keyboardHidden" android:name="ExtendSearch"></activity>
+		
+		<uses-library android:name="com.google.android.maps"/>
+    </application>
+</manifest>

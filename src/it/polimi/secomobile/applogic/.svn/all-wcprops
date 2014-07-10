@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/SeCoMobile/!svn/ver/46/new/src/it/polimi/secomobile/applogic
+END
+SearchConnectionMenuItemListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/SeCoMobile/!svn/ver/46/new/src/it/polimi/secomobile/applogic/SearchConnectionMenuItemListener.java
+END
+SearchMenuItemListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/SeCoMobile/!svn/ver/46/new/src/it/polimi/secomobile/applogic/SearchMenuItemListener.java
+END
+SubmitClickListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/SeCoMobile/!svn/ver/46/new/src/it/polimi/secomobile/applogic/SubmitClickListener.java
+END
+SearchAPMenuItemListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/SeCoMobile/!svn/ver/46/new/src/it/polimi/secomobile/applogic/SearchAPMenuItemListener.java
+END
+SearchInterfaceMenuItemListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/SeCoMobile/!svn/ver/46/new/src/it/polimi/secomobile/applogic/SearchInterfaceMenuItemListener.java
+END
+QueryCreator.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/SeCoMobile/!svn/ver/50/new/src/it/polimi/secomobile/applogic/QueryCreator.java
+END
+HistoryItemListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/SeCoMobile/!svn/ver/46/new/src/it/polimi/secomobile/applogic/HistoryItemListener.java
+END
+ExtendSearchClickListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/SeCoMobile/!svn/ver/46/new/src/it/polimi/secomobile/applogic/ExtendSearchClickListener.java
+END
+SubjectClickListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/SeCoMobile/!svn/ver/46/new/src/it/polimi/secomobile/applogic/SubjectClickListener.java
+END

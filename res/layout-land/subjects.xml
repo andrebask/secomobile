@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center" 
+    android:layout_height="match_parent" 
+    android:layout_width="match_parent" 
+    android:orientation="vertical">
+    <RelativeLayout 
+    	android:id="@+id/SubjectsButtonsRelativeLayout" 
+    	android:layout_width="match_parent" 
+    	android:layout_height="match_parent">
+	    <TextView 
+	    	android:id="@+id/SubjectsTitle" 
+	    	android:gravity="center" 
+	    	android:layout_gravity="center" 
+	    	android:layout_weight="1" 
+	    	android:text="@string/subjects_title" 
+	    	style="@style/HomeTitle" 
+	    	android:layout_width="match_parent" 
+	    	android:layout_height="wrap_content" 
+	    	android:layout_alignParentTop="true" 
+	    	android:layout_centerInParent="true"></TextView>
+	    <TableLayout 
+	    		android:layout_height="match_parent" 
+	    		android:layout_width="match_parent" 
+	    		android:id="@+id/SubjectTableLayout" 
+	    		android:layout_below="@+id/SubjectsTitle" 
+	    		android:gravity="center">
+	        <TableRow 
+	        		android:id="@+id/tableRow1" 
+	        		android:gravity="center" 
+	        		android:layout_width="match_parent" 
+	        		android:layout_height="match_parent" >
+	            <Button android:textSize="25dip" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/business_button" android:id="@+id/BusinessButton" android:padding="20dip"></Button>
+	            <Button android:textSize="25dip" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/freetime_button" android:id="@+id/FreeTimeButton" android:padding="20dip"></Button>
+	        </TableRow>
+	        <TableRow 
+	        		android:id="@+id/tableRow2" 
+	        		android:gravity="center" 
+	        		android:layout_width="match_parent" 
+	        		android:layout_height="match_parent">
+	            <Button android:textSize="25dip" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/education_button" android:id="@+id/EducationButton" android:padding="20dip"></Button>
+	            <Button android:textSize="25dip" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/science_button" android:id="@+id/ScienceButton" android:padding="20dip"></Button>
+	        </TableRow>
+	    </TableLayout>
+    </RelativeLayout>           	
+</LinearLayout>

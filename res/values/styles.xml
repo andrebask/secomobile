@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is a simple XML Resource definition file for a style. -->
+<resources>
+	<style name="HomeTitle">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14pt</item>   
+        <item name="android:textStyle">bold</item>      
+	</style>
+	<style name="SubjectMenuTitle">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14pt</item>   
+        <item name="android:textStyle">bold</item>  
+        <item name="android:background">#3f3f3f</item>    
+	</style>
+	<style name="SubjectMenuSubtitle">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">7pt</item>   
+        <item name="android:textStyle">bold</item>  
+        <item name="android:background">#000000</item>  
+        <item name="android:padding">2pt</item>  
+	</style>
+		<style name="ProgressMessage">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">8pt</item>   
+	</style>
+		<style name="TupleDetailTitle">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">10pt</item>   
+        <item name="android:textStyle">bold</item>  
+        <item name="android:background">#3f3f3f</item>    
+	</style>
+		<style name="TupleDetailText">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">8pt</item>  
+        <item name="android:textColorLink">#FFFFFF</item> 
+	</style>
+		<style name="TupleDetailButton">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14pt</item>  
+        <item name="android:textStyle">bold</item>  
+        <item name="android:background">#242424</item>    
+	</style>
+</resources>

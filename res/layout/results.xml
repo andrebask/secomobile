@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center|bottom">
+    <TextView android:layout_height="wrap_content" style="@style/SubjectMenuTitle" android:layout_width="match_parent" android:gravity="center" android:id="@+id/ResultsTitle" android:text="@string/results_title"></TextView>
+    <ExpandableListView android:id="@+id/expandable_tuple_list" android:layout_height="wrap_content" android:layout_width="match_parent" android:groupIndicator="@drawable/expandable_view_indicator"></ExpandableListView>
+</LinearLayout>

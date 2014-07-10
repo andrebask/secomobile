@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center|top">
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/ParRelativeLayout">
+        <LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_alignParentTop="true" android:id="@+id/ParTitlesLayout">
+            <TextView android:layout_width="match_parent" android:gravity="center" android:text="@string/parameters_subtitle" android:layout_height="wrap_content" android:id="@+id/ParametersSubtitle" style="@style/SubjectMenuSubtitle"></TextView>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/ParLayout" android:orientation="vertical" android:layout_width="match_parent" android:layout_below="@+id/ParTitlesLayout" android:layout_height="match_parent" android:layout_above="@+id/SubmitButton">
+            <ScrollView android:id="@+id/ParScrollView" android:layout_height="match_parent" android:layout_width="match_parent"></ScrollView>
+        </LinearLayout>
+        <Button android:text="@string/submit_button" android:layout_width="wrap_content" android:id="@+id/SubmitButton" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_height="wrap_content"></Button>
+    </RelativeLayout>
+</LinearLayout>

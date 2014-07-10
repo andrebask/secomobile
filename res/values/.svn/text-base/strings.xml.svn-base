@@ -1,0 +1,4143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Subjects!</string>
+    <string name="app_name">SeCo Mobile</string>
+    <string name="science_button">Science</string>
+    <string name="education_button">Education</string>
+    <string name="subjects_title">Subjects</string>
+    <string name="freetime_button">Free Time</string>
+    <string name="business_button">Business</string>
+    <string name="progress_title">Connecting...</string>
+    <string name="progress_message">Retrieving information from the server.</string>
+    <string name="parameters_title">Search</string>
+    <string name="parameters_subtitle">Insert search parameters</string>
+    <string name="submit_button">Submit</string>
+    <string name="results_title">Results</string>
+    <string name="history_title">History</string>
+    <string name="history_subtitle">Recent searches by date</string>
+    <string name="map_title">Map</string>
+    <string name="map_subtitle">position of the selected element</string>
+    
+    
+    
+    
+    <string name="semanticMetadata">"{
+    \"info\": {
+        \"date\": \"30-03-2011\",
+        \"author\": \"Volox, Aleboz, Donelli\" 
+    },
+    \"data\": {
+        \"services\": [
+            {
+                \"serviceID\": \"PV0CmuVaJ5J7iDZmcKZoiK\",
+                \"description\": \"Walkscore and TransitScore\",
+                \"serviceName\": \"WalkScore by Coordinates\",
+                \"serviceShortName\": \"WalkScore\",
+                \"icon\": \"Walkscore\",
+                \"inputSignature\": [
+                    {
+                        \"__id__\": \"longitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"CoordLon\",
+                        \"description\": \"Longitude\",
+                        \"default\": \"-73.961452\",
+                        \"caption\": \"Longitude\" 
+                    },
+                    {
+                        \"__id__\": \"latitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"CoordLat\",
+                        \"description\": \"Latitude\",
+                        \"default\": \"40.714224\",
+                        \"caption\": \"Latitude\" 
+                    }
+                ],
+                \"outputSignature\": [
+                    {
+                        \"description\": \"Walkscore Index\",
+                        \"dataType\": \"INTEGER\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"walkscore\",
+                        \"name\": \"Walkscore\",
+                        \"semanticType\": \"Integer\"                          
+                    },
+                    {
+                        \"description\": \"WalkTransit Index\",
+                        \"dataType\": \"INTEGER\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"transit_score\",
+                        \"name\": \"Transit Score\",
+                        \"semanticType\": \"Integer\"                          
+                    },
+                    {
+                        \"description\": \"More Information Link\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"more_info_link\",
+                        \"name\": \"More Info Link\",
+                        \"semanticType\": \"URL\"                          
+                    },
+                    {
+                        \"description\": \"More Information Icon\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"more_info_icon\",
+                        \"name\": \"More Info Icon\",
+                        \"semanticType\": \"URL\"                          
+                    },
+                    {
+                        \"description\": \"Summary\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"summary\",
+                        \"name\": \"Summary\",
+                        \"semanticType\": \"String\"                          
+                    }                                   
+                ]
+            },
+            
+            {
+                \"serviceID\": \"wIFNHyfVPyHxNLl7VWEzMA\",
+                \"description\": \"TransitScore from Walkscore Service\",
+                \"serviceName\": \"Transit by Coordinates\",
+                \"serviceShortName\": \"TransitScore\",
+                \"icon\": \"Walkscore\",
+                \"inputSignature\": [
+                    {
+                        \"__id__\": \"longitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"CoordLon\",
+                        \"description\": \"Longitude\",
+                        \"default\": \"-73.961452\",
+                        \"caption\": \"Longitude\" 
+                    },
+                    {
+                        \"__id__\": \"latitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"CoordLat\",
+                        \"description\": \"Latitude\",
+                        \"default\": \"40.714224\",
+                        \"caption\": \"Latitude\" 
+                    }
+                ],
+                \"outputSignature\": [                    
+                    {
+                        \"description\": \"WalkTransit Index\",
+                        \"dataType\": \"INTEGER\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"transit_score\",
+                        \"name\": \"Transit Score\",
+                        \"semanticType\": \"Integer\"                          
+                    },                  
+                    {
+                        \"description\": \"Summary\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"summary\",
+                        \"name\": \"Summary\",
+                        \"semanticType\": \"String\"                          
+                    }                                   
+                ]
+            },
+            
+            {
+                \"serviceID\": \"MfL0K1qmqaJBuScdJNG0sB\",
+                \"description\": \"Walkscore \",
+                \"serviceName\": \"Walkscore by Coordinates\",
+                \"serviceShortName\": \"WalkScore\",
+                \"icon\": \"Walkscore\",
+                \"inputSignature\": [
+                    {
+                        \"__id__\": \"longitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"CoordLon\",
+                        \"description\": \"Longitude\",
+                        \"default\": \"-73.961452\",
+                        \"caption\": \"Longitude\" 
+                    },
+                    {
+                        \"__id__\": \"latitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"CoordLat\",
+                        \"description\": \"Latitude\",
+                        \"default\": \"40.714224\",
+                        \"caption\": \"Latitude\" 
+                    }
+                ],
+                \"outputSignature\": [                    
+                    {
+                        \"description\": \"Walkscore Index\",
+                        \"dataType\": \"INTEGER\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"walkscore\",
+                        \"name\": \"Transit Score\",
+                        \"semanticType\": \"Integer\"                          
+                    },                  
+                    {
+                        \"description\": \"More Info Link\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"more_info_link\",
+                        \"name\": \"More Info\",
+                        \"semanticType\": \"URL\"                          
+                    },
+                     {
+                        \"description\": \"More Info Icon\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"more_info_icon\",
+                        \"name\": \"More Info Icon\",
+                        \"semanticType\": \"URL\"                          
+                    }                                   
+                ]
+            },
+            
+            {
+                \"serviceID\": \"feedzillaLighByRel\",
+                \"description\": \"Feedzilla News By Query Sort By Relevance\",
+                \"serviceName\": \"FeedzillaSortRelevance\",
+                \"serviceShortName\": \"FeedZillaRelevance\",
+                \"icon\": \"Feedzilla\",
+                \"inputSignature\": [
+                    {
+                        \"__id__\": \"query\",
+                        \"dataType\": \"STRING\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"String\",
+                        \"description\": \"News Query\",
+                        \"default\": \"Java\",
+                        \"caption\": \"Query\" 
+                    }
+                ],
+                \"outputSignature\":[
+                    {
+                        \"description\": \"News URL\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"url\",
+                        \"name\": \"Url\",
+                        \"semanticType\": \"URL\"                          
+                    },
+                    {
+                        \"description\": \"News Title\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"title\",
+                        \"name\": \"Title\",
+                        \"semanticType\": \"String\"                          
+                    },
+                    {
+                        \"description\": \"News Summary\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"summary\",
+                        \"name\": \"Summary\",
+                        \"semanticType\": \"String\"                          
+                    },
+                    {
+                        \"description\": \"News Source\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"source\",
+                        \"name\": \"Source\",
+                        \"semanticType\": \"String\"                          
+                    },
+                    {
+                        \"description\": \"Publication Date\",
+                        \"dataType\": \"DATETIME\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"publish_date\",
+                        \"name\": \"Date\",
+                        \"semanticType\": \"Date\"                          
+                    }               
+                ]           
+            },
+            
+            {
+                \"serviceID\": \"feedzillaFullByRel\",
+                \"description\": \"Feedzilla News By Query and Date Sort By Relevance\",
+                \"serviceName\": \"FeedzillaDateSortRelevance\",
+                \"serviceShortName\": \"FeedZillaDateRelevance\",
+                \"icon\": \"Feedzilla\",
+                \"inputSignature\": [
+                    {
+                        \"__id__\": \"query\",
+                        \"dataType\": \"STRING\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"String\",
+                        \"description\": \"News Query\",
+                        \"default\": \"Java\",
+                        \"caption\": \"Query\" 
+                    },
+                    {
+                        \"__id__\": \"since\",
+                        \"dataType\": \"STRING\",
+                        \"type\": \"date\",
+                        \"semanticType\": \"Date\",
+                        \"description\": \"Start Date\",
+                        \"default\": \"\",
+                        \"caption\": \"Since\" 
+                    },
+                    {
+                        \"__id__\": \"title_only\",
+                        \"dataType\": \"BOOLEAN\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"Boolean\",
+                        \"description\": \"Return only titles\",
+                        \"default\": \"false\",
+                        \"caption\": \"Only Title?\" 
+                    }
+                ],
+                \"outputSignature\":[                 
+                    {
+                        \"description\": \"News Author\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"author\",
+                        \"name\": \"Author\",
+                        \"semanticType\": \"String\"                          
+                    },
+                    {
+                        \"description\": \"News URL\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"url\",
+                        \"name\": \"Url\",
+                        \"semanticType\": \"URL\"                          
+                    },
+                    {
+                        \"description\": \"News Title\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"title\",
+                        \"name\": \"Title\",
+                        \"semanticType\": \"String\"                          
+                    },
+                    {
+                        \"description\": \"News Summary\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"summary\",
+                        \"name\": \"Summary\",
+                        \"semanticType\": \"String\"                          
+                    },
+                    {
+                        \"description\": \"News Source\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"source\",
+                        \"name\": \"Source\",
+                        \"semanticType\": \"String\"                          
+                    },
+                    {
+                        \"description\": \"Publication Date\",
+                        \"dataType\": \"DATETIME\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"publish_date\",
+                        \"name\": \"Date\",
+                        \"semanticType\": \"Date\"                          
+                    }               
+                ]           
+            },
+            
+            {
+                \"serviceID\": \"nOCJSsHKoUH4bI6tI3cQjI\",
+                \"description\": \"News form FeddZilla by keyword and date order by date\",
+                \"serviceName\": \"FeedzillaKeyWordAndDate\",
+                \"serviceShortName\": \"FeedzillaKeyWordAndDate\",
+                \"icon\": \"Feedzilla\",
+                \"inputSignature\": [
+                    {
+                        \"__id__\": \"query\",
+                        \"dataType\": \"STRING\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"String\",
+                        \"description\": \"News Query\",
+                        \"default\": \"Java\",
+                        \"caption\": \"Query\" 
+                    },
+                    {
+                        \"__id__\": \"since\",
+                        \"dataType\": \"STRING\",
+                        \"type\": \"date\",
+                        \"semanticType\": \"Date\",
+                        \"description\": \"Start Date\",
+                        \"default\": \"\",
+                        \"caption\": \"Since\" 
+                    },
+                    {
+                        \"__id__\": \"title_only\",
+                        \"dataType\": \"BOOLEAN\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"Boolean\",
+                        \"description\": \"Return only titles\",
+                        \"default\": \"false\",
+                        \"caption\": \"Only Title?\" 
+                    }
+                ],
+                \"outputSignature\":[                 
+                    {
+                        \"description\": \"News Author\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"author\",
+                        \"name\": \"Author\",
+                        \"semanticType\": \"String\"                          
+                    },
+                    {
+                        \"description\": \"News URL\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"url\",
+                        \"name\": \"Url\",
+                        \"semanticType\": \"URL\"                          
+                    },
+                    {
+                        \"description\": \"News Title\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"title\",
+                        \"name\": \"Title\",
+                        \"semanticType\": \"String\"                          
+                    },
+                    {
+                        \"description\": \"News Summary\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"summary\",
+                        \"name\": \"Summary\",
+                        \"semanticType\": \"String\"                          
+                    },
+                    {
+                        \"description\": \"News Source\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"source\",
+                        \"name\": \"Source\",
+                        \"semanticType\": \"String\"                          
+                    },
+                    {
+                        \"description\": \"Publication Date\",
+                        \"dataType\": \"DATETIME\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"publish_date\",
+                        \"name\": \"Date\",
+                        \"semanticType\": \"Date\"                          
+                    }               
+                ]           
+            },
+            
+            {
+                \"serviceID\": \"gFQUrs99dpFLlCigZelY1E\",
+                \"description\": \"Us College By State, Ranked By Enrollment and Tuituon\",
+                \"serviceName\": \"UsNews.Com By State\",
+                \"serviceShortName\": \"CollegeByState\",
+                \"icon\": \"College\",
+                \"inputSignature\": [
+                    {
+                        \"__id__\": \"state\",
+                        \"dataType\": \"STRING\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"String\",
+                        \"description\": \"State\",
+                        \"default\": \"NY\",
+                        \"caption\": \"State\" 
+                    },
+                    {
+                        \"__id__\": \"tuition-max\",
+                        \"dataType\": \"DECIMAL\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"Float\",
+                        \"description\": \"Maximum Tuition\",
+                        \"default\": \"10000\",
+                        \"caption\": \"Max Tuition\" 
+                    },
+                    {
+                        \"__id__\": \"enrollment-max\",
+                        \"dataType\": \"DECIMAL\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"Float\",
+                        \"description\": \"Maximum Enrollment\",
+                        \"default\": \"10000\",
+                        \"caption\": \"Max Enrollment\" 
+                    }
+                ],
+                \"outputSignature\": [
+                    {
+                        \"description\": \"College Name\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"name\",
+                        \"name\": \"Name\",
+                        \"semanticType\": \"String\"                          
+                    },
+                    {
+                        \"description\": \"College Category\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"category\",
+                        \"name\": \"Category\",
+                        \"semanticType\": \"String\"                          
+                    },
+                    {
+                        \"description\": \"Tuititon Out\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"tuitionOutState\",
+                        \"name\": \"Tuition Out\",
+                        \"semanticType\": \"Float\"                          
+                    },
+                    {
+                        \"description\": \"Tuititon In\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"tuitionInState\",
+                        \"name\": \"Tuition In\",
+                        \"semanticType\": \"Float\"                          
+                    },
+                    {
+                        \"description\": \"Enrollment Fee\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"enrollment\",
+                        \"name\": \"Enrollment\",
+                        \"semanticType\": \"Float\"                          
+                    },
+                    {
+                        \"description\": \"Acceptance Rate\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"acceptance\",
+                        \"name\": \"Acceptance\",
+                        \"semanticType\": \"Float\"                          
+                    }               
+                ]
+            },                                  
+            {
+                \"serviceID\": \"nCno4DRdybHQ15uiBtxdMC\",
+                \"description\": \"Doctor search by location\",
+                \"serviceName\": \"Doctor.com By City\",
+                \"serviceShortName\": \"DoctorByCity\",
+                \"icon\": \"Doctor\",
+                \"inputSignature\": [
+                    {
+                        \"__id__\": \"speciality\",
+                        \"dataType\": \"STRING\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"String\",
+                        \"description\": \"Doctor Speciality\",
+                        \"default\": \"Audio\",
+                        \"caption\": \"Speciality\" 
+                    },
+                    {
+                        \"__id__\": \"state\",
+                        \"dataType\": \"STRING\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"String\",
+                        \"description\": \"The US State\",
+                        \"default\": \"California\",
+                        \"caption\": \"State\" 
+                    },
+                    {
+                        \"__id__\": \"city\",
+                        \"dataType\": \"STRING\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"String\",
+                        \"description\": \"The US City\",
+                        \"default\": \"Los Angeles\",
+                        \"caption\": \"City\" 
+                    } 
+                ],
+                 \"outputSignature\": [
+                    {
+                        \"description\": \"Doctor Name\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"completeName\",
+                        \"name\": \"Name\",
+                        \"semanticType\": \"String\"                          
+                    },
+                    {
+                        \"description\": \"Doctor Speciality\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"speciality\",
+                        \"name\": \"Speciality\" 
+                    },
+                    {
+                        \"description\": \"Street Address\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"streetAddress\",
+                        \"name\": \"Street\" 
+                    },
+                    {
+                        \"description\": \"State\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"state\",
+                        \"name\": \"State\" 
+                    },
+                    {
+                        \"description\": \"City\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"city\",
+                        \"name\": \"City\" 
+                    },
+                    {
+                        \"description\": \"Zip Code\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"zipCode\",
+                        \"name\": \"Zip Code\" 
+                    },
+                    {
+                        \"description\": \"latitude\",
+                        \"dataType\": \"DECIMAL\",                        
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLat\",
+                        \"__id__\": \"latitude\",
+                        \"name\": \"latitude\" 
+                    },                    
+                    {
+                        \"description\": \"longitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLong\",
+                        \"__id__\": \"longitude\",
+                        \"name\": \"longitude\" 
+                    },
+                    {
+                        \"description\": \"Doctor Profile URL\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"profileLinkUrl\",
+                        \"name\": \"URL\" 
+                    }
+                 
+                ]           
+            },
+            
+            {
+                \"serviceID\": \"aDGhlMorhJJTk6Soq3F5ND\",
+                \"description\": \"Doctor search by ZIP\",
+                \"serviceName\": \"Doctor.com By ZIP\",
+                \"serviceShortName\": \"DoctorBy ZIP\",
+                \"icon\": \"Doctor\",
+                \"inputSignature\": [
+                    {
+                        \"__id__\": \"speciality\",
+                        \"dataType\": \"STRING\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"String\",
+                        \"description\": \"Doctor Speciality\",
+                        \"default\": \"Audio\",
+                        \"caption\": \"Speciality\" 
+                    },
+                    {
+                        \"__id__\": \"zipCode\",
+                        \"dataType\": \"STRING\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"ZIP\",
+                        \"description\": \"The ZIP Code\",
+                        \"default\": \"90210\",
+                        \"caption\": \"Zip Code\" 
+                    }
+                ],
+                 \"outputSignature\": [
+                    {
+                        \"description\": \"Doctor Name\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"completeName\",
+                        \"name\": \"Name\",
+                        \"semanticType\": \"String\"                          
+                    },
+                    {
+                        \"description\": \"Doctor Speciality\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"speciality\",
+                        \"name\": \"Speciality\" 
+                    },
+                    {
+                        \"description\": \"Street Address\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"streetAddress\",
+                        \"name\": \"Street\" 
+                    },
+                    {
+                        \"description\": \"State\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"state\",
+                        \"name\": \"State\" 
+                    },
+                    {
+                        \"description\": \"City\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"city\",
+                        \"name\": \"City\" 
+                    },
+                    {
+                        \"description\": \"Zip Code\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"zipCode\",
+                        \"name\": \"Zip Code\" 
+                    },
+                    {
+                        \"description\": \"latitude\",
+                        \"dataType\": \"DECIMAL\",                        
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLat\",
+                        \"__id__\": \"latitude\",
+                        \"name\": \"latitude\" 
+                    },                    
+                    {
+                        \"description\": \"longitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLong\",
+                        \"__id__\": \"longitude\",
+                        \"name\": \"longitude\" 
+                    },
+                    {
+                        \"description\": \"Doctor Profile URL\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"profileLinkUrl\",
+                        \"name\": \"URL\" 
+                    }
+                 
+                ]           
+            },
+            
+            {
+                \"serviceID\": \"PZngabiZhSHyKE7f6gB54K\",
+                \"description\": \"Doctor search by City No Coordinates\",
+                \"serviceName\": \"Doctor.com By City No Coordinates\",
+                \"serviceShortName\": \"DoctorByCityNoCoordinates\",
+                \"icon\": \"Doctor\",
+                \"inputSignature\": [
+                    {
+                        \"__id__\": \"speciality\",
+                        \"dataType\": \"STRING\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"String\",
+                        \"description\": \"Doctor Speciality\",
+                        \"default\": \"Audio\",
+                        \"caption\": \"Speciality\" 
+                    },
+                    {
+                        \"__id__\": \"state\",
+                        \"dataType\": \"STRING\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"String\",
+                        \"description\": \"The US State\",
+                        \"default\": \"California\",
+                        \"caption\": \"State\" 
+                    },
+                    {
+                        \"__id__\": \"city\",
+                        \"dataType\": \"STRING\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"String\",
+                        \"description\": \"The US City\",
+                        \"default\": \"Los Angeles\",
+                        \"caption\": \"City\" 
+                    } 
+                ],
+                 \"outputSignature\": [
+                    {
+                        \"description\": \"Doctor Name\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"completeName\",
+                        \"name\": \"Name\",
+                        \"semanticType\": \"String\"                          
+                    },
+                    {
+                        \"description\": \"Doctor Speciality\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"speciality\",
+                        \"name\": \"Speciality\" 
+                    },
+                    {
+                        \"description\": \"Street Address\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"streetAddress\",
+                        \"name\": \"Street\" 
+                    },
+                    {
+                        \"description\": \"State\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"state\",
+                        \"name\": \"State\" 
+                    },
+                    {
+                        \"description\": \"City\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"city\",
+                        \"name\": \"City\" 
+                    },
+                    {
+                        \"description\": \"Zip Code\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"zipCode\",
+                        \"name\": \"Zip Code\" 
+                    },
+                    {
+                        \"description\": \"Doctor Profile URL\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"profileLinkUrl\",
+                        \"name\": \"URL\" 
+                    }
+                 
+                ]           
+            },
+            
+            {
+                \"serviceID\": \"AQvyyKzfsUIfJzSitaIgdD\",
+                \"description\": \"Doctor search by ZIP No Coordinates\",
+                \"serviceName\": \"Doctor.com By ZIP No Coordinates\",
+                \"serviceShortName\": \"DoctorByZIPNoCoordinates\",
+                \"icon\": \"Doctor\",
+                \"inputSignature\": [
+                    {
+                        \"__id__\": \"speciality\",
+                        \"dataType\": \"STRING\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"String\",
+                        \"description\": \"Doctor Speciality\",
+                        \"default\": \"Audio\",
+                        \"caption\": \"Speciality\" 
+                    },
+                    {
+                        \"__id__\": \"zipCode\",
+                        \"dataType\": \"STRING\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"ZIP\",
+                        \"description\": \"The ZIP Code\",
+                        \"default\": \"90210\",
+                        \"caption\": \"ZIP\" 
+                    }
+                ],
+                 \"outputSignature\": [
+                    {
+                        \"description\": \"Doctor Name\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"completeName\",
+                        \"name\": \"Name\",
+                        \"semanticType\": \"String\"                          
+                    },
+                    {
+                        \"description\": \"Doctor Speciality\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"speciality\",
+                        \"name\": \"Speciality\" 
+                    },
+                    {
+                        \"description\": \"Street Address\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"streetAddress\",
+                        \"name\": \"Street\" 
+                    },
+                    {
+                        \"description\": \"State\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"state\",
+                        \"name\": \"State\" 
+                    },
+                    {
+                        \"description\": \"City\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"city\",
+                        \"name\": \"City\" 
+                    },
+                    {
+                        \"description\": \"Zip Code\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"zipCode\",
+                        \"name\": \"Zip Code\" 
+                    },
+                    {
+                        \"description\": \"Doctor Profile URL\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"profileLinkUrl\",
+                        \"name\": \"URL\" 
+                    }
+                 
+                ]           
+            },
+            
+            {
+                \"serviceID\": \"restaurant_google_maps\",
+                \"description\": \"Search Restaurants with GMaps\",
+                \"serviceName\": \"Restaurant By Address\",
+                \"serviceShortName\": \"RestaurantByAddress\",
+                \"icon\": \"Restaurant\",
+                \"inputSignature\": [
+                    {
+                        \"semanticType\": \"String\",
+                        \"default\": \"Times Square\",
+                        \"description\": \"Address to look for\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"Restaurant Address\",
+                        \"__id__\": \"iAddress\",                        
+                        \"type\": \"text\" 
+                    },
+                    {
+                        \"semanticType\": \"String\",
+                        \"default\": \"New York\",
+                        \"description\": \"Address to look for\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"Restaurant City\",
+                        \"__id__\": \"iCity\",                        
+                        \"type\": \"text\" 
+                    },
+                    {
+                        \"semanticType\": \"String\",
+                        \"default\": \"USA\",
+                        \"description\": \"Country to look for\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"Restaurant Country\",
+                        \"__id__\": \"iCountry\",                        
+                        \"type\": \"text\" 
+                    },
+                    {
+                        \"semanticType\": \"String\",
+                        \"default\": \"Italian\",
+                        \"description\": \"Country to look for\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"Restaurant Category\",
+                        \"__id__\": \"iCategory\",                        
+                        \"type\": \"text\" 
+                    } 
+                ],
+                \"outputSignature\": [
+                    {
+                        \"description\": \"Restaurant Name\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"STRING\",
+                        \"__id__\": \"name\",
+                        \"name\": \"Name\",
+                        \"visible\": false 
+                    },                                        
+                    {
+                        \"description\": \"Restaurant Address\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"address\",
+                        \"name\": \"Address\" 
+                    },
+                    {
+                        \"description\": \"Restaurant City\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"city\",
+                        \"name\": \"City\" 
+                    },
+                    {
+                        \"description\": \"Restaurant Phone\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"phone\",
+                        \"name\": \"Phone\" 
+                    },
+                    {
+                        \"description\": \"Restaurant User Rating\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"rating\",
+                        \"name\": \"Rating\" 
+                    },
+                    {
+                        \"description\": \"Restaurant Distance From Input\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"distance\",
+                        \"name\": \"Distance\" 
+                    },
+                    {
+                        \"attributes\": [
+                            {
+                                \"dataType\": \"STRING\",
+                                \"semanticType\": \"String\",
+                                \"description\": \"Category Name\",
+                                \"__id__\": \"name\",
+                                \"name\": \"Name\" 
+                            }                           
+                        ],
+                        \"description\": \"Restaurant Categories\",
+                        \"__type__\": \"repeatingGroup\",
+                        \"__id__\": \"categories\",
+                        \"name\": \"Categories\" 
+                    }                
+                ]                           
+            },          
+            {
+                \"serviceID\": \"amoUyAm2T6CTHSG8Bqt0J59J\",
+                \"description\": \"Zillow by coordinates\",
+                \"serviceName\": \"Zillow by coord\",
+                \"serviceShortName\": \"ZillowByCoord\",
+                \"icon\": \"Zillow\",
+                \"inputSignature\": [
+                    {
+                        \"__id__\": \"longitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"CoordLon\",
+                        \"description\": \"Search Longitude\",
+                        \"default\": \"-73.961452\",
+                        \"caption\": \"Longitude\" 
+                    },
+                    {
+                        \"__id__\": \"latitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"CoordLat\",
+                        \"description\": \"Search Latitude\",
+                        \"default\": \"40.714224\",
+                        \"caption\": \"Latitude\" 
+                    },
+                    {
+                        \"__id__\": \"type\",
+                        \"dataType\": \"STRING\",                        
+                        \"semanticType\": \"String\",
+                        \"description\": \"Type of estate\",                        
+                        \"caption\": \"Type\",
+                        \"type\": \"select\",
+                        \"options\": {
+                            \"All\": {
+                                \"selected\": \"true\",
+                                \"value\": \"all\"                                
+                            },
+                            \"rent\": \"Rent\",
+                            \"fsbo\": \"Sale By Owner\",
+                            \"fsba\": \"Sale By Agent\",
+                            \"mmm\" : \"Make Me Move\" 
+                        }                                                    
+                    } 
+                ],
+                \"outputSignature\": [
+                    {
+                        \"description\": \"bathrooms\",
+                        \"dataType\": \"DECIMAL\",
+                        \"semanticType\": \"Integer\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"bathrooms\",
+                        \"name\": \"bathrooms\" 
+                    },
+                    {
+                        \"description\": \"bedrooms\",
+                        \"dataType\": \"DECIMAL\",
+                        \"semanticType\": \"Integer\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"bedrooms\",
+                        \"name\": \"bedrooms\" 
+                    },
+                    {
+                        \"description\": \"city\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"city\",
+                        \"name\": \"city\" 
+                    },
+                    {
+                        \"description\": \"country\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"country\",
+                        \"name\": \"country\" 
+                    },
+                    {
+                        \"description\": \"details\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"details\",
+                        \"name\": \"details\" 
+                    },
+                    {
+                        \"description\": \"latitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLat\",
+                        \"__id__\": \"latitude\",
+                        \"name\": \"latitude\" 
+                    },
+                    {
+                        \"description\": \"price\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Float\",
+                        \"__id__\": \"price\",
+                        \"name\": \"price\" 
+                    },
+                    {
+                        \"description\": \"longitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLong\",
+                        \"__id__\": \"longitude\",
+                        \"name\": \"longitude\" 
+                    },
+                    {
+                        \"description\": \"state\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"state\",
+                        \"name\": \"state\" 
+                    },
+                    {
+                        \"description\": \"street\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"street\",
+                        \"name\": \"street\" 
+                    },
+                    {
+                        \"description\": \"type\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"type\",
+                        \"name\": \"type\" 
+                    },
+                    {
+                        \"description\": \"useCode\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"useCode\",
+                        \"name\": \"useCode\" 
+                    },
+                    {
+                        \"description\": \"zipCode\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"zipcode\",
+                        \"name\": \"zipCode\" 
+                    },
+                    {
+                        \"description\": \"lotSizeSqFt\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"lotSizeSqFt\",
+                        \"name\": \"lotSizeSqFt\" 
+                    }
+                ] 
+            },
+            
+            {
+                \"serviceID\": \"amFXgtPPqtdVK3nL9cnEgXsH\",
+                \"description\": \"Real Estate Search With Zillow by Location Order By Price\",
+                \"serviceName\": \"Zillow by Location\",
+                \"serviceShortName\": \"ZillowByLocation\",
+                \"icon\": \"Zillow\",
+                \"inputSignature\": [
+                    {
+                        \"__id__\": \"state\",
+                        \"dataType\": \"STRING\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"String\",
+                        \"description\": \"State\",
+                        \"default\": \"CA\",
+                        \"caption\": \"State\" 
+                    },
+                    {
+                        \"__id__\": \"city\",
+                        \"dataType\": \"STRING\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"String\",
+                        \"description\": \"City\",
+                        \"default\": \"Los Angeles\",
+                        \"caption\": \"City\" 
+                    },
+                    {
+                        \"__id__\": \"type\",
+                        \"dataType\": \"STRING\",                        
+                        \"semanticType\": \"String\",
+                        \"description\": \"Type of estate\",                        
+                        \"caption\": \"Type\",
+                        \"type\": \"select\",
+                        \"options\": {
+                            \"all\": {
+                                \"selected\": \"true\",
+                                \"value\": \"all\" 
+                            },
+                            \"rent\": \"Rent\",
+                            \"fsbo\": \"Sale By Owner\",
+                            \"fsba\": \"Sale By Agent\",
+                            \"mmm\" : \"Make Me Move\" 
+                        }        
+                    } 
+                ],
+                \"outputSignature\": [
+                    {
+                        \"description\": \"bathrooms\",
+                        \"dataType\": \"DECIMAL\",
+                        \"semanticType\": \"Integer\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"bathrooms\",
+                        \"name\": \"bathrooms\" 
+                    },
+                    {
+                        \"description\": \"bedrooms\",
+                        \"dataType\": \"DECIMAL\",
+                        \"semanticType\": \"Integer\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"bedrooms\",
+                        \"name\": \"bedrooms\" 
+                    },
+                    {
+                        \"description\": \"city\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"city\",
+                        \"name\": \"city\" 
+                    },
+                    {
+                        \"description\": \"country\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"country\",
+                        \"name\": \"country\" 
+                    },
+                    {
+                        \"description\": \"details\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"details\",
+                        \"name\": \"details\" 
+                    },
+                    {
+                        \"description\": \"latitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLat\",
+                        \"__id__\": \"latitude\",
+                        \"name\": \"latitude\" 
+                    },
+                    {
+                        \"description\": \"price\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Float\",
+                        \"__id__\": \"price\",
+                        \"name\": \"price\" 
+                    },
+                    {
+                        \"description\": \"longitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLong\",
+                        \"__id__\": \"longitude\",
+                        \"name\": \"longitude\" 
+                    },
+                    {
+                        \"description\": \"state\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"state\",
+                        \"name\": \"state\" 
+                    },
+                    {
+                        \"description\": \"street\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"street\",
+                        \"name\": \"street\" 
+                    },
+                    {
+                        \"description\": \"type\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"type\",
+                        \"name\": \"type\" 
+                    },
+                    {
+                        \"description\": \"useCode\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"useCode\",
+                        \"name\": \"useCode\" 
+                    },
+                    {
+                        \"description\": \"zipCode\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"zipcode\",
+                        \"name\": \"zipCode\" 
+                    },
+                    {
+                        \"description\": \"lotSizeSqFt\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"lotSizeSqFt\",
+                        \"name\": \"lotSizeSqFt\" 
+                    }
+                ] 
+            },
+            
+             {
+                \"serviceID\": \"FXgtPPqtdVK3nL9cnEgXsH\",
+                \"description\": \"Real Estate Search With Zillow by ZIP Order By Price\",
+                \"serviceName\": \"Zillow by ZIP\",
+                \"serviceShortName\": \"ZillowByZIP\",
+                \"icon\": \"Zillow\",
+                \"inputSignature\": [
+                    {
+                        \"__id__\": \"zipcode\",
+                        \"dataType\": \"STRING\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"String\",
+                        \"description\": \"Zip Code\",
+                        \"default\": \"90201\",
+                        \"caption\": \"ZIP\" 
+                    },
+                    {
+                        \"__id__\": \"type\",
+                        \"dataType\": \"STRING\",                        
+                        \"semanticType\": \"String\",
+                        \"description\": \"Type of estate\",                        
+                        \"caption\": \"Type\",
+                         \"type\": \"select\",
+                        \"options\": {
+                            \"all\": {
+                                \"selected\": \"true\",
+                                \"value\": \"all\" 
+                            },
+                            \"rent\": \"Rent\",
+                            \"fsbo\": \"Sale By Owner\",
+                            \"fsba\": \"Sale By Agent\",
+                            \"mmm\" : \"Make Me Move\" 
+                        }        
+                    } 
+                ],
+                \"outputSignature\": [
+                    {
+                        \"description\": \"bathrooms\",
+                        \"dataType\": \"DECIMAL\",
+                        \"semanticType\": \"Integer\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"bathrooms\",
+                        \"name\": \"bathrooms\" 
+                    },
+                    {
+                        \"description\": \"bedrooms\",
+                        \"dataType\": \"DECIMAL\",
+                        \"semanticType\": \"Integer\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"bedrooms\",
+                        \"name\": \"bedrooms\" 
+                    },
+                    {
+                        \"description\": \"city\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"city\",
+                        \"name\": \"city\" 
+                    },
+                    {
+                        \"description\": \"country\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"country\",
+                        \"name\": \"country\" 
+                    },
+                    {
+                        \"description\": \"details\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"details\",
+                        \"name\": \"details\" 
+                    },
+                    {
+                        \"description\": \"latitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLat\",
+                        \"__id__\": \"latitude\",
+                        \"name\": \"latitude\" 
+                    },
+                    {
+                        \"description\": \"price\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Float\",
+                        \"__id__\": \"price\",
+                        \"name\": \"price\" 
+                    },
+                    {
+                        \"description\": \"longitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLong\",
+                        \"__id__\": \"longitude\",
+                        \"name\": \"longitude\" 
+                    },
+                    {
+                        \"description\": \"state\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"state\",
+                        \"name\": \"state\" 
+                    },
+                    {
+                        \"description\": \"street\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"street\",
+                        \"name\": \"street\" 
+                    },
+                    {
+                        \"description\": \"type\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"type\",
+                        \"name\": \"type\" 
+                    },
+                    {
+                        \"description\": \"useCode\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"useCode\",
+                        \"name\": \"useCode\" 
+                    },
+                    {
+                        \"description\": \"zipCode\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"zipcode\",
+                        \"name\": \"zipCode\" 
+                    },
+                    {
+                        \"description\": \"lotSizeSqFt\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"lotSizeSqFt\",
+                        \"name\": \"lotSizeSqFt\" 
+                    }
+                ] 
+            },
+            
+            {
+                \"serviceID\": \"amPdBVNVQOzrGyTJJvLdl3jJ\",
+                \"description\": \"Real Estate Nestoria by Coordinates Order Distance\",
+                \"serviceName\": \"Nestoria By Coordinates\",
+                \"serviceShortName\": \"NestoriaByCoordinates\",
+                \"icon\": \"Nestoria\",
+                \"inputSignature\": [
+                    {
+                        \"__id__\": \"country\",
+                        \"dataType\": \"STRING\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"String\",
+                        \"description\": \"Country\",
+                        \"default\": \"UK\",
+                        \"caption\": \"Country\" 
+                    },
+                    {
+                        \"__id__\": \"listing_type\",
+                        \"dataType\": \"STRING\",                        
+                        \"semanticType\": \"String\",
+                        \"description\": \"Listing Type\",                        
+                        \"caption\": \"Listing Type\",
+                        \"type\": \"select\",
+                        \"options\": {
+                            \"all\": {
+                                \"selected\": \"true\",
+                                \"value\": \"All\" 
+                            },
+                            \"house\": \"House\",
+                            \"flat\": \"Flat\",
+                            \"property\": \"Property\" 
+                        }                          
+                    },
+                    {
+                        \"__id__\": \"property_type\",
+                        \"dataType\": \"STRING\",                        
+                        \"semanticType\": \"String\",
+                        \"description\": \"Property Type\",                        
+                        \"caption\": \"Property Type\",
+                        \"type\": \"select\",
+                        \"options\": {
+                            \"buy\": {
+                                \"selected\": \"true\",
+                                \"value\": \"Buy\" 
+                            },
+                            \"rent\": \"Rent\",
+                            \"share\": \"Share\"                             
+                        }                                                
+                    },
+                    {
+                        \"__id__\": \"centre_point_lat\",
+                        \"dataType\": \"DECIMAL\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"CoordLat\",
+                        \"description\": \"Real Estate Longitude\",
+                        \"default\": \"40.714224\",
+                        \"caption\": \"Latitude\" 
+                    },
+                    {
+                        \"__id__\": \"centre_point_lon\",
+                        \"dataType\": \"DECIMAL\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"CoordLon\",
+                        \"description\": \"Real Estate Longitude\",
+                        \"default\": \"40.714224\",
+                        \"caption\": \"Longitude\" 
+                    },
+                    {
+                        \"__id__\": \"radius\",
+                        \"dataType\": \"STRING\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"String\",
+                        \"description\": \"Distance from search\",
+                        \"default\": \"10\",
+                        \"caption\": \"Radius\"                         
+                    }, 
+                    {
+                        \"__id__\": \"unit\",
+                        \"dataType\": \"STRING\",                        
+                        \"semanticType\": \"String\",
+                        \"description\": \"Unit\",                        
+                        \"caption\": \"Unit\",
+                        \"type\": \"select\",
+                        \"options\": {
+                            \"km\": {
+                                \"selected\": \"true\",
+                                \"value\": \"Kilometers\" 
+                            },                            
+                            \"mi\": \"Miles\"                             
+                        }                          
+                    }, 
+                    {
+                        \"__id__\": \"price_max\",
+                        \"dataType\": \"STRING\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"String\",
+                        \"description\": \"Maximum Price\",
+                        \"default\": \"\",
+                        \"caption\": \"Max Price\" 
+                    }, 
+                    {
+                        \"__id__\": \"room_min\",
+                        \"dataType\": \"INTEGER\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"String\",
+                        \"description\": \"Minimum Room Number\",
+                        \"default\": \"\",
+                        \"caption\": \"Min Room\" 
+                    } 
+                ],
+                \"outputSignature\": [
+                    {
+                        \"description\": \"Listing Type\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"listing_type\",
+                        \"name\": \"Listing Type\" 
+                    },
+                    {
+                        \"description\": \"Property Type\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"property_type\",
+                        \"name\": \"Property Type\" 
+                    },
+                    {
+                        \"description\": \"Title\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"title\",
+                        \"name\": \"Title\" 
+                    },
+                    {
+                        \"description\": \"Summary\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"summary\",
+                        \"name\": \"Summary\" 
+                    },
+                    {
+                        \"description\": \"Price\",
+                        \"dataType\": \"DECIMAL\",
+                        \"semanticType\": \"Float\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"price\",
+                        \"name\": \"Price\" 
+                    },
+                    {
+                        \"description\": \"Price Type\",
+                        \"dataType\": \"DECIMAL\",
+                        \"semanticType\": \"Float\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"price_type\",
+                        \"name\": \"Price Type\" 
+                    },
+                    {
+                        \"description\": \"Bathrooms\",
+                        \"dataType\": \"DECIMAL\",
+                        \"semanticType\": \"Integer\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"bathroom_number\",
+                        \"name\": \"Bathrooms\" 
+                    },
+                    {
+                        \"description\": \"Bedrooms\",
+                        \"dataType\": \"DECIMAL\",
+                        \"semanticType\": \"Integer\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"bedroom_number\",
+                        \"name\": \"Bedrooms\" 
+                    },
+                    {
+                        \"description\": \"Thumbnail Width\",
+                        \"dataType\": \"DECIMAL\",
+                        \"semanticType\": \"Float\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"thumb_width\",
+                        \"name\": \"Thumb Width\" 
+                    },
+                    {
+                        \"description\": \"Thumbnail Height\",
+                        \"dataType\": \"DECIMAL\",
+                        \"semanticType\": \"Float\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"thumb_height\",
+                        \"name\": \"Thumb Height\" 
+                    },
+                    {
+                        \"description\": \"Thumbnail URL\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"URL\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"img_url\",
+                        \"name\": \"Thumb URL\" 
+                    },                    
+                    {
+                        \"description\": \"latitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLat\",
+                        \"__id__\": \"latitude\",
+                        \"name\": \"latitude\" 
+                    },                    
+                    {
+                        \"description\": \"longitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLong\",
+                        \"__id__\": \"longitude\",
+                        \"name\": \"longitude\" 
+                    },                    
+                    {
+                        \"description\": \"Size\",
+                        \"dataType\": \"DECIMAL\",
+                        \"semanticType\": \"Float\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"size\",
+                        \"name\": \"Size\" 
+                    },
+                    {
+                        \"description\": \"Lister URL\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"URL\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"lister_url\",
+                        \"name\": \"Lister URL\" 
+                    }
+                ] 
+            },
+            
+            
+            {
+                \"serviceID\": \"a25e9Ejr1tIqhBvHqAUHtE\",
+                \"description\": \"Job Search with Indeed by city\",
+                \"serviceName\": \"Indeed By City\",
+                \"serviceShortName\": \"IndeedByCity\",
+                \"icon\": \"indeed\",
+                \"inputSignature\": [
+                    {
+                        \"__id__\": \"query\",
+                        \"dataType\": \"STRING\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"String\",
+                        \"description\": \"Job Query\",
+                        \"default\": \"Java\",
+                        \"caption\": \"Job Query\" 
+                    },
+                    {
+                        \"__id__\": \"location\",
+                        \"dataType\": \"STRING\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"String\",
+                        \"description\": \"City To search in\",
+                        \"default\": \"New York\",
+                        \"caption\": \"Location\" 
+                    }
+                ],
+                \"outputSignature\": [
+                    {
+                        \"description\": \"city\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"STRING\",
+                        \"__id__\": \"city\",
+                        \"name\": \"City\" 
+                    },
+                    {
+                        \"description\": \"company\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"company\",
+                        \"name\": \"Company\" 
+                    },
+                    {
+                        \"description\": \"state\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"state\",
+                        \"name\": \"State\" 
+                    },
+                    
+                    {
+                        \"description\": \"latitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLat\",
+                        \"__id__\": \"latitude\",
+                        \"name\": \"Latitude\" 
+                    },
+                    {
+                        \"description\": \"longitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLong\",
+                        \"__id__\": \"longitude\",
+                        \"name\": \"Longitude\" 
+                    },
+                    {
+                        \"description\": \"jobtitle\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"jobtitle\",
+                        \"name\": \"Job Title\" 
+                    } 
+                ],
+                \"connections\": [
+                    
+                ] 
+            },
+            
+            {
+                \"serviceID\": \"w0FK2evlk8FfnNBgk086HJ\",
+                \"description\": \"Job Search with Indeed by City and Job Type\",
+                \"serviceName\": \"Indeed By City And Job Type\",
+                \"serviceShortName\": \"IndeedByCityJobType\",
+                \"icon\": \"indeed\",
+                \"inputSignature\": [
+                    {
+                        \"__id__\": \"query\",
+                        \"dataType\": \"STRING\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"String\",
+                        \"description\": \"Job Query\",
+                        \"default\": \"Java\",
+                        \"caption\": \"Job Query\" 
+                    },
+                    {
+                        \"__id__\": \"jobtype\",
+                        \"dataType\": \"STRING\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"String\",
+                        \"description\": \"Job Type\",
+                        \"default\": \"\",
+                        \"caption\": \"Job Type\" 
+                    },
+                    {
+                        \"__id__\": \"location\",
+                        \"dataType\": \"STRING\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"String\",
+                        \"description\": \"City To search in\",
+                        \"default\": \"New York\",
+                        \"caption\": \"Location\" 
+                    }
+                ],
+                \"outputSignature\": [
+                    {
+                        \"description\": \"city\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"STRING\",
+                        \"__id__\": \"city\",
+                        \"name\": \"city\" 
+                    },
+                    {
+                        \"description\": \"company\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"company\",
+                        \"name\": \"company\" 
+                    },
+                    {
+                        \"description\": \"state\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"state\",
+                        \"name\": \"state\" 
+                    },
+                    
+                    {
+                        \"description\": \"latitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLat\",
+                        \"__id__\": \"latitude\",
+                        \"name\": \"latitude\" 
+                    },
+                    {
+                        \"description\": \"longitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLong\",
+                        \"__id__\": \"longitude\",
+                        \"name\": \"longitude\" 
+                    },
+                    {
+                        \"description\": \"jobtitle\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"jobtitle\",
+                        \"name\": \"jobtitle\" 
+                    } 
+                ],
+                \"connections\": [
+                    
+                ] 
+            },
+            
+            {
+                \"serviceID\": \"5ko7aCAKx0Hewb0xO7Ui6E\",
+                \"description\": \"CareerBuilder Jobs Search By City Ranked by Relevance\",
+                \"serviceName\": \"CareerBuilder By City\",
+                \"serviceShortName\": \"CareerBuilderByCity\",
+                \"icon\": \"jobs\",
+                \"inputSignature\": [
+                    {
+                        \"semanticType\": \"String\",
+                        \"default\": \"Java\",
+                        \"description\": \"The query string\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"Keywords\",
+                        \"__id__\": \"keywords\",                        
+                        \"type\": \"text\" 
+                    },
+                    {
+                        \"semanticType\": \"String\",
+                        \"description\": \"The city for job search\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"City\",
+                        \"default\": \"New York\",
+                        \"__id__\": \"city\",
+                        \"type\": \"text\"                        
+                    } 
+                    
+                ],
+                \"outputSignature\": [
+                    {
+                        \"description\": \"Job City\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"city\",
+                        \"name\": \"City\" 
+                    },
+                    {
+                        \"description\": \"Company Name\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"company\",
+                        \"name\": \"Company\" 
+                    },
+                    {
+                        \"description\": \"Job Title\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"jobTitle\",
+                        \"name\": \"Job Title\" 
+                    },
+                    {
+                        \"description\": \"Latitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLat\",
+                        \"__id__\": \"locationLatitude\",
+                        \"name\": \"Latitude\" 
+                    },
+                    {
+                        \"description\": \"Longitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLong\",
+                        \"__id__\": \"locationLongitude\",
+                        \"name\": \"Longitude\" 
+                    },
+                    {
+                        \"description\": \"state\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"state\",
+                        \"name\": \"state\" 
+                    } 
+                ],
+                \"connections\": [
+                    
+                ] 
+            },
+            
+             {
+                \"serviceID\": \"MCpTsfAD3hJVrwtxiWyGWI\",
+                \"description\": \"CareerBuilder Jobs Search By Coordinates Ranked by Relevance\",
+                \"serviceName\": \"CareerBuilder By Coordinates\",
+                \"serviceShortName\": \"CareerBuilderByCoordinates\",
+                \"icon\": \"jobs\",
+                \"inputSignature\": [
+                    {
+                        \"semanticType\": \"String\",
+                        \"default\": \"Java\",
+                        \"description\": \"The query string\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"Keywords\",
+                        \"__id__\": \"keywords\",                        
+                        \"type\": \"text\" 
+                    },
+                    {
+                        \"__id__\": \"longitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"CoordLon\",
+                        \"description\": \"Job Longitude\",
+                        \"default\": \"-73.961452\",
+                        \"caption\": \"Longitude\" 
+                    },
+                    {
+                        \"__id__\": \"latitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"CoordLat\",
+                        \"description\": \"Job Latitude\",
+                        \"default\": \"40.714224\",
+                        \"caption\": \"Latitude\" 
+                    },
+                    {
+                        \"__id__\": \"radius\",
+                        \"dataType\": \"DECIMAL\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"Float\",
+                        \"description\": \"Job Distance\",
+                        \"default\": \"20\",
+                        \"caption\": \"Distance\" 
+                    } 
+                ],
+                \"outputSignature\": [
+                    {
+                        \"description\": \"Job City\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"city\",
+                        \"name\": \"City\" 
+                    },
+                    {
+                        \"description\": \"Company Name\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"company\",
+                        \"name\": \"Company\" 
+                    },
+                    {
+                        \"description\": \"Job Title\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"jobTitle\",
+                        \"name\": \"Job Title\" 
+                    },
+                    {
+                        \"description\": \"Latitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLat\",
+                        \"__id__\": \"locationLatitude\",
+                        \"name\": \"Latitude\" 
+                    },
+                    {
+                        \"description\": \"Longitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLong\",
+                        \"__id__\": \"locationLongitude\",
+                        \"name\": \"Longitude\" 
+                    },
+                    {
+                        \"description\": \"state\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"state\",
+                        \"name\": \"state\" 
+                    } 
+                ],
+                \"connections\": [
+                    
+                ] 
+            },
+            
+            {
+                \"serviceID\": \"MCpTsfAD3hJVrwtxiWyGWI\",
+                \"description\": \"CareerBuilder Jobs Search By City And Salary by Relevance\",
+                \"serviceName\": \"CareerBuilder By City And Salary\",
+                \"serviceShortName\": \"CareerBuilderByCitySalary\",
+                \"icon\": \"jobs\",
+                \"inputSignature\": [
+                    {
+                        \"semanticType\": \"String\",
+                        \"default\": \"Java\",
+                        \"description\": \"The query string\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"Keywords\",
+                        \"__id__\": \"keywords\",                        
+                        \"type\": \"text\" 
+                    },
+                    {
+                        \"semanticType\": \"String\",
+                        \"default\": \"City\",
+                        \"description\": \"The City\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"City\",
+                        \"__id__\": \"city\",                        
+                        \"type\": \"text\" 
+                    },
+                    {
+                        \"semanticType\": \"Integer\",
+                        \"default\": \"Minimum Salary\",
+                        \"description\": \"Minimum Salary\",
+                        \"dataType\": \"INTEGER\",
+                        \"caption\": \"Paylow\",
+                        \"__id__\": \"paylow\",                        
+                        \"type\": \"text\" 
+                    }
+                    
+                ],
+                \"outputSignature\": [
+                    {
+                        \"description\": \"Job City\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"city\",
+                        \"name\": \"City\" 
+                    },
+                    {
+                        \"description\": \"Company Name\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"company\",
+                        \"name\": \"Company\" 
+                    },
+                    {
+                        \"description\": \"Job Title\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"jobTitle\",
+                        \"name\": \"Job Title\" 
+                    },
+                    {
+                        \"description\": \"Employment Type\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"employmentType\",
+                        \"name\": \"Employment Type\" 
+                    },
+                    {
+                        \"description\": \"Latitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLat\",
+                        \"__id__\": \"locationLatitude\",
+                        \"name\": \"Latitude\" 
+                    },
+                    {
+                        \"description\": \"Longitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLong\",
+                        \"__id__\": \"locationLongitude\",
+                        \"name\": \"Longitude\" 
+                    },
+                    {
+                        \"description\": \"state\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"String\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"state\",
+                        \"name\": \"state\" 
+                    },
+                    {
+                        \"description\": \"Pay\",
+                        \"dataType\": \"STRING\",
+                        \"semanticType\": \"Float\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"pay\",
+                        \"name\": \"Pay\" 
+                    } 
+                ],
+                \"connections\": [
+                    
+                ] 
+            },
+            
+            {            
+                \"serviceID\": \"cEfOwBz0DrGXJdBtlezgND\",
+                \"description\": \"Car Rental with HotWire By City\",
+                \"serviceName\": \"Car Rental By City Order By Price\",
+                \"serviceShortName\": \"HotWire.com\",
+                \"icon\": \"rental\",
+                \"inputSignature\": [
+                    {
+                        \"semanticType\": \"Date\",
+                        \"default\": \"\",
+                        \"description\": \"Start Date\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"Start Date\",
+                        \"__id__\": \"startdate\",                        
+                        \"type\": \"date\" 
+                    },
+                    {
+                        \"semanticType\": \"Date\",
+                        \"default\": \"\",
+                        \"description\": \"End Date\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"End Date\",
+                        \"__id__\": \"enddate\",                        
+                        \"type\": \"date\" 
+                    },
+                    {
+                        \"semanticType\": \"Time\",
+                        \"default\": \"11:30\",
+                        \"description\": \"Pickup Time\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"Pickup Time\",
+                        \"__id__\": \"pickuptime\",                        
+                        \"type\": \"text\" 
+                    },
+                    {
+                        \"semanticType\": \"Time\",
+                        \"default\": \"12:30\",
+                        \"description\": \"Dropoff Time\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"Dropoff Time\",
+                        \"__id__\": \"dropofftime\",                        
+                        \"type\": \"text\" 
+                    },
+                    {
+                        \"semanticType\": \"String\",
+                        \"default\": \"Los Angeles\",
+                        \"description\": \"The City to search in\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"City\",
+                        \"__id__\": \"city\",                        
+                        \"type\": \"text\" 
+                    },
+                    {
+                        \"semanticType\": \"String\",
+                        \"default\": \"CA\",
+                        \"description\": \"The State to search in\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"State\",
+                        \"__id__\": \"state\",                        
+                        \"type\": \"text\" 
+                    }
+                ],
+                \"outputSignature\":[
+                    {
+                        \"description\": \"Total Price\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Float\",
+                        \"__id__\": \"totalPrice\",
+                        \"name\": \"Price\"                         
+                    },
+                    {
+                        \"description\": \"Car Type\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"carType\",
+                        \"name\": \"Type\" 
+                    },
+                    {
+                        \"description\": \"Car Model\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"model\",
+                        \"name\": \"Model\" 
+                    }                
+                ]            
+            },
+            
+            {            
+                \"serviceID\": \"uOLU4UmtOSH2sPYDmKxphF\",
+                \"description\": \"Car Rental with HotWire By Coordinates\",
+                \"serviceName\": \"Car Rental By Coordinates Order By Price\",
+                \"serviceShortName\": \"HotWireCoordinates\",
+                \"icon\": \"rental\",
+                \"inputSignature\": [
+                    {
+                        \"semanticType\": \"Date\",
+                        \"default\": \"\",
+                        \"description\": \"Start Date\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"Start Date\",
+                        \"__id__\": \"startdate\",                        
+                        \"type\": \"date\" 
+                    },
+                    {
+                        \"semanticType\": \"Date\",
+                        \"default\": \"\",
+                        \"description\": \"End Date\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"End Date\",
+                        \"__id__\": \"enddate\",                        
+                        \"type\": \"date\" 
+                    },
+                    {
+                        \"semanticType\": \"Time\",
+                        \"default\": \"11:30\",
+                        \"description\": \"Pickup Time\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"Pickup Time\",
+                        \"__id__\": \"pickuptime\",                        
+                        \"type\": \"text\" 
+                    },
+                    {
+                        \"semanticType\": \"Time\",
+                        \"default\": \"12:30\",
+                        \"description\": \"Dropoff Time\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"Dropoff Time\",
+                        \"__id__\": \"dropofftime\",                        
+                        \"type\": \"text\" 
+                    },
+                    {
+                        \"__id__\": \"longitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"CoordLon\",
+                        \"description\": \"Job Longitude\",
+                        \"default\": \"-73.961452\",
+                        \"caption\": \"Longitude\" 
+                    },
+                    {
+                        \"__id__\": \"latitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"CoordLat\",
+                        \"description\": \"Job Latitude\",
+                        \"default\": \"40.714224\",
+                        \"caption\": \"Latitude\" 
+                    }
+                ],
+                \"outputSignature\":[
+                    {
+                        \"description\": \"Result Id\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"resultId\",
+                        \"name\": \"ID\"                         
+                    },
+                    {
+                        \"description\": \"Total Price\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Float\",
+                        \"__id__\": \"totalPrice\",
+                        \"name\": \"Price\"                         
+                    },
+                    {
+                        \"description\": \"Car Type\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"carType\",
+                        \"name\": \"Type\" 
+                    },
+                    {
+                        \"description\": \"Car Model\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"model\",
+                        \"name\": \"Model\" 
+                    }                
+                ]            
+            },
+            
+            {
+                \"serviceID\": \"schoolByZipOrdByDist\",
+                \"description\": \"An education and child development site for parents.\",
+                \"serviceName\": \"education.com - School by ZIP code Order By Dist.\",
+                \"serviceShortName\": \"education.com\",
+                \"icon\": \"movies.png\",
+                \"inputSignature\": [
+                    {
+                        \"semanticType\": \"ZIP\",
+                        \"default\": \"29601\",
+                        \"description\": \"The ZIP code to search in\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"ZIP Code\",
+                        \"__id__\": \"zip\",
+                        \"validate\": {
+                            \"minlength\": 5,
+                            \"required\": true,
+                            \"messages\": {
+                                \"minlength\": \"At least {0} characters long\",
+                                \"required\": \"Please enter a ZIP code\" 
+                            } 
+                        },
+                        \"type\": \"text\" 
+                    },
+                    {
+                        \"semanticType\": \"String\",
+                        \"description\": \"The grade of the school\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"School Grade\",
+                        \"__id__\": \"gradeLevel\",
+                        \"type\": \"select\",
+                        \"options\": {
+                            \"high\": {
+                                \"selected\": \"true\",
+                                \"value\": \"High\" 
+                            },
+                            \"middle\": \"Middle\",
+                            \"elementary\": \"Elementary\" 
+                        } 
+                    } 
+                ],
+                \"outputSignature\": [
+                    {
+                        \"description\": \"School Identifier\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"STRING\",
+                        \"__id__\": \"id\",
+                        \"name\": \"ID\",
+                        \"visible\": false 
+                    },
+                    {
+                        \"description\": \"School Address\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"address\",
+                        \"name\": \"Address\" 
+                    },
+                    {
+                        \"description\": \"School City\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"city\",
+                        \"name\": \"City\" 
+                    },
+                    {
+                        \"description\": \"Distance from Query Address\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Number\",
+                        \"__id__\": \"address\",
+                        \"name\": \"Address\" 
+                    },
+                    {
+                        \"description\": \"School Latitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLat\",
+                        \"__id__\": \"latitude\",
+                        \"name\": \"Latitude\" 
+                    },
+                    {
+                        \"description\": \"School Longitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLon\",
+                        \"__id__\": \"longitude\",
+                        \"name\": \"Longitude\" 
+                    },
+                    {
+                        \"description\": \"School Name\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"name\",
+                        \"name\": \"Name\" 
+                    },
+                    {
+                        \"description\": \"School Zip\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"zip\",
+                        \"name\": \"ZIP Code\" 
+                    },
+                    {
+                        \"description\": \"Enrollment Fee\",
+                        \"dataType\": \"INTEGER\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Currency\",
+                        \"__id__\": \"enrollment\",
+                        \"name\": \"Enrollment Fee\" 
+                    },
+                    {
+                        \"description\": \"School Category\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"category\",
+                        \"name\": \"Category\" 
+                    },
+                    {
+                        \"description\": \"Grade Level\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"gradeLevel\",
+                        \"name\": \"Grade Level\" 
+                    },
+                    {
+                        \"description\": \"Is Adeguately Yearly Progress\",
+                        \"dataType\": \"BOOLEAN\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Boolean\",
+                        \"__id__\": \"aypResult\",
+                        \"name\": \"AYP\" 
+                    },
+                    {
+                        \"description\": \"Phone Number\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"STRING\",
+                        \"__id__\": \"phone\",
+                        \"name\": \"Phone\" 
+                    } 
+                ],
+                \"connections\": [
+                    
+                ] 
+            },
+            
+            
+          
+            {
+                \"serviceID\": \"vMg25emfo6GTWF1zSb2WLI\",
+                \"description\": \"An education and child development site for parents.\",
+                \"serviceName\": \"education.com - Search School by ZIP code.\",
+                \"serviceShortName\": \"education.com\",
+                \"icon\": \"movies.png\",
+                \"inputSignature\": [
+                    {
+                        \"semanticType\": \"ZIP\",
+                        \"default\": \"29601\",
+                        \"description\": \"The ZIP code to search in\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"ZIP Code\",
+                        \"__id__\": \"zip\",
+                        \"validate\": {
+                            \"minlength\": 5,
+                            \"required\": true,
+                            \"messages\": {
+                                \"minlength\": \"At least {0} characters long\",
+                                \"required\": \"Please enter a ZIP code\" 
+                            } 
+                        },
+                        \"type\": \"text\" 
+                    },
+                    {
+                        \"semanticType\": \"String\",
+                        \"description\": \"The grade of the school\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"School Grade\",
+                        \"__id__\": \"gradeLevel\",
+                        \"type\": \"select\",
+                        \"options\": {
+                            \"high\": {
+                                \"selected\": \"true\",
+                                \"value\": \"High\" 
+                            },
+                            \"middle\": \"Middle\",
+                            \"elementary\": \"Elementary\" 
+                        } 
+                    } 
+                ],
+                \"outputSignature\": [
+                    {
+                        \"description\": \"School Identifier\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"STRING\",
+                        \"__id__\": \"id\",
+                        \"name\": \"ID\",
+                        \"visible\": false 
+                    },
+                    {
+                        \"description\": \"School Address\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"address\",
+                        \"name\": \"Address\" 
+                    },
+                    {
+                        \"description\": \"School City\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"city\",
+                        \"name\": \"City\" 
+                    },
+                    {
+                        \"description\": \"Distance from Query Address\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Number\",
+                        \"__id__\": \"address\",
+                        \"name\": \"Address\" 
+                    },
+                    {
+                        \"description\": \"School Latitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLat\",
+                        \"__id__\": \"latitude\",
+                        \"name\": \"Latitude\" 
+                    },
+                    {
+                        \"description\": \"School Longitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLon\",
+                        \"__id__\": \"longitude\",
+                        \"name\": \"Longitude\" 
+                    },
+                    {
+                        \"description\": \"School Name\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"name\",
+                        \"name\": \"Name\" 
+                    },
+                    {
+                        \"description\": \"School Zip\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"zip\",
+                        \"name\": \"ZIP Code\" 
+                    },
+                    {
+                        \"description\": \"Enrollment Fee\",
+                        \"dataType\": \"INTEGER\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Currency\",
+                        \"__id__\": \"enrollment\",
+                        \"name\": \"Enrollment Fee\" 
+                    },
+                    {
+                        \"description\": \"School Category\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"category\",
+                        \"name\": \"Category\" 
+                    },
+                    {
+                        \"description\": \"Grade Level\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"gradeLevel\",
+                        \"name\": \"Grade Level\" 
+                    },
+                    {
+                        \"description\": \"Is Adeguately Yearly Progress\",
+                        \"dataType\": \"BOOLEAN\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Boolean\",
+                        \"__id__\": \"aypResult\",
+                        \"name\": \"AYP\" 
+                    },
+                    {
+                        \"description\": \"Phone Number\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"STRING\",
+                        \"__id__\": \"phone\",
+                        \"name\": \"Phone\" 
+                    } 
+                ],
+                \"connections\": [
+                    
+                ] 
+            },
+            
+            {
+                \"serviceID\": \"schoolByCoordOrdByDist\",
+                \"description\": \"An education and child development site for parents.\",
+                \"serviceName\": \"education.com - Search School by Location\",
+                \"serviceShortName\": \"education.comByLocation\",
+                \"icon\": \"movies.png\",
+                \"inputSignature\": [                    
+                    {
+                        \"semanticType\": \"String\",
+                        \"description\": \"The grade of the school\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"School Grade\",
+                        \"__id__\": \"gradeLevel\",
+                        \"type\": \"select\",
+                        \"options\": {
+                            \"high\": {
+                                \"selected\": \"true\",
+                                \"value\": \"High\" 
+                            },
+                            \"middle\": \"Middle\",
+                            \"elementary\": \"Elementary\" 
+                        } 
+                    },
+                    {
+                        \"__id__\": \"longitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"CoordLon\",
+                        \"description\": \"School Longitude\",
+                        \"default\": \"-73.961452\",
+                        \"caption\": \"Longitude\" 
+                    },
+                    {
+                        \"__id__\": \"latitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"CoordLat\",
+                        \"description\": \"School Latitude\",
+                        \"default\": \"40.714224\",
+                        \"caption\": \"Latitude\" 
+                    },
+                    {
+                        \"__id__\": \"distance\",
+                        \"dataType\": \"DECIMAL\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"Float\",
+                        \"description\": \"Distance from coordinates\",
+                        \"default\": \"20\",
+                        \"caption\": \"Distance\" 
+                    }
+                ],
+                \"outputSignature\": [
+                    {
+                        \"description\": \"School Identifier\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"STRING\",
+                        \"__id__\": \"id\",
+                        \"name\": \"ID\",
+                        \"visible\": false 
+                    },
+                    {
+                        \"description\": \"School Address\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"address\",
+                        \"name\": \"Address\" 
+                    },
+                    {
+                        \"description\": \"School City\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"city\",
+                        \"name\": \"City\" 
+                    },
+                    {
+                        \"description\": \"Distance from Query Address\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Number\",
+                        \"__id__\": \"address\",
+                        \"name\": \"Address\" 
+                    },
+                    {
+                        \"description\": \"School Latitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLat\",
+                        \"__id__\": \"latitude\",
+                        \"name\": \"Latitude\" 
+                    },
+                    {
+                        \"description\": \"School Longitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLon\",
+                        \"__id__\": \"longitude\",
+                        \"name\": \"Longitude\" 
+                    },
+                    {
+                        \"description\": \"School Name\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"name\",
+                        \"name\": \"Name\" 
+                    },
+                    {
+                        \"description\": \"School Zip\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"zip\",
+                        \"name\": \"ZIP Code\" 
+                    },
+                    {
+                        \"description\": \"Enrollment Fee\",
+                        \"dataType\": \"INTEGER\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Currency\",
+                        \"__id__\": \"enrollment\",
+                        \"name\": \"Enrollment Fee\" 
+                    },
+                    {
+                        \"description\": \"School Category\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"category\",
+                        \"name\": \"Category\" 
+                    },
+                    {
+                        \"description\": \"Grade Level\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"gradeLevel\",
+                        \"name\": \"Grade Level\" 
+                    },
+                    {
+                        \"description\": \"Is Adeguately Yearly Progress\",
+                        \"dataType\": \"BOOLEAN\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Boolean\",
+                        \"__id__\": \"aypResult\",
+                        \"name\": \"AYP\" 
+                    },
+                    {
+                        \"description\": \"Phone Number\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"STRING\",
+                        \"__id__\": \"phone\",
+                        \"name\": \"Phone\" 
+                    } 
+                ],
+                \"connections\": [
+                    
+                ] 
+            },
+            
+            {
+                \"serviceID\": \"y1Ij2iVevhFfSQ46ipDYEG\",
+                \"description\": \"education.com By Coordinates Order By Enrollment\",
+                \"serviceName\": \"education.com By Coordinates\",
+                \"serviceShortName\": \"EducationByCoordinates\",
+                \"icon\": \"education\",
+                \"inputSignature\": [                   
+                    {
+                        \"__id__\": \"longitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"CoordLon\",
+                        \"description\": \"School Longitude\",
+                        \"default\": \"-73.961452\",
+                        \"caption\": \"Longitude\" 
+                    },
+                    {
+                        \"__id__\": \"latitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"CoordLat\",
+                        \"description\": \"School Latitude\",
+                        \"default\": \"40.714224\",
+                        \"caption\": \"Latitude\" 
+                    },
+                    {
+                        \"__id__\": \"distance\",
+                        \"dataType\": \"DECIMAL\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"Float\",
+                        \"description\": \"School Distance\",
+                        \"default\": \"20\",
+                        \"caption\": \"Distance\" 
+                    },                    
+                    {
+                        \"semanticType\": \"String\",
+                        \"description\": \"The grade of the school\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"School Grade\",
+                        \"__id__\": \"gradeLevel\",
+                        \"type\": \"select\",
+                        \"options\": {
+                            \"high\": {
+                                \"selected\": \"true\",
+                                \"value\": \"High\" 
+                            },
+                            \"middle\": \"Middle\",
+                            \"elementary\": \"Elementary\" 
+                        } 
+                    } 
+                ],
+                \"outputSignature\": [
+                    {
+                        \"description\": \"School Identifier\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"STRING\",
+                        \"__id__\": \"id\",
+                        \"name\": \"ID\",
+                        \"visible\": false 
+                    },
+                    {
+                        \"description\": \"School Address\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"address\",
+                        \"name\": \"Address\" 
+                    },
+                    {
+                        \"description\": \"School City\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"city\",
+                        \"name\": \"City\" 
+                    },
+                    {
+                        \"description\": \"Distance from Query Address\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Number\",
+                        \"__id__\": \"address\",
+                        \"name\": \"Address\" 
+                    },
+                    {
+                        \"description\": \"School Latitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLat\",
+                        \"__id__\": \"latitude\",
+                        \"name\": \"Latitude\" 
+                    },
+                    {
+                        \"description\": \"School Longitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLon\",
+                        \"__id__\": \"longitude\",
+                        \"name\": \"Longitude\" 
+                    },
+                    {
+                        \"description\": \"School Distance\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Distance\",
+                        \"__id__\": \"distance\",
+                        \"name\": \"Distance\" 
+                    },
+                    {
+                        \"description\": \"School Name\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"name\",
+                        \"name\": \"Name\" 
+                    },
+                    {
+                        \"description\": \"School Zip\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"zip\",
+                        \"name\": \"ZIP Code\" 
+                    },
+                    {
+                        \"description\": \"Enrollment Fee\",
+                        \"dataType\": \"INTEGER\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Currency\",
+                        \"__id__\": \"enrollment\",
+                        \"name\": \"Enrollment Fee\" 
+                    },
+                    {
+                        \"description\": \"School Category\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"category\",
+                        \"name\": \"Category\" 
+                    },
+                    {
+                        \"description\": \"Grade Level\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"gradeLevel\",
+                        \"name\": \"Grade Level\" 
+                    },
+                    {
+                        \"description\": \"Is Adeguately Yearly Progress\",
+                        \"dataType\": \"BOOLEAN\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Boolean\",
+                        \"__id__\": \"aypResult\",
+                        \"name\": \"AYP\" 
+                    },
+                    {
+                        \"description\": \"Phone Number\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"STRING\",
+                        \"__id__\": \"phone\",
+                        \"name\": \"Phone\" 
+                    } 
+                ],
+                \"connections\": [
+                    
+                ] 
+            },
+            
+            {
+                \"serviceID\": \"google_theatre_by_address\",
+                \"serviceName\": \"Google Theatre Search\",
+                \"serviceShortName\": \"Google Theatre\",
+                \"description\": \"Theatres extracted using the Google service\",
+                \"icon\": \"movies.png\",
+                \"inputSignature\": [
+                    {
+                        \"semanticType\": \"String\",
+                        \"default\": \"Times Square\",
+                        \"description\": \"Address to look for\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"Theatre Address\",
+                        \"__id__\": \"iAddress\",
+                        \"validate\": {
+                            \"required\": true,
+                            \"messages\": {
+                                \"required\": \"Please enter an Address value\" 
+                            } 
+                        },
+                        \"type\": \"text\" 
+                    },
+                    {
+                        \"semanticType\": \"String\",
+                        \"default\": \"New York\",
+                        \"description\": \"Address to look for\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"Theatre City\",
+                        \"__id__\": \"iCity\",
+                        \"validate\": {
+                            \"required\": true,
+                            \"messages\": {
+                                \"required\": \"Please enter a City value\" 
+                            } 
+                        },
+                        \"type\": \"text\" 
+                    },
+                    {
+                        \"semanticType\": \"String\",
+                        \"default\": \"USA\",
+                        \"description\": \"Country to look for\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"Theatre Country\",
+                        \"__id__\": \"iCountry\",
+                        \"validate\": {
+                            \"required\": true,
+                            \"messages\": {
+                                \"required\": \"Please enter a Country value\" 
+                            } 
+                        },
+                        \"type\": \"text\" 
+                    } 
+                ],               
+                \"outputSignature\": [
+                    {
+                        \"description\": \"Theatre Name\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"STRING\",
+                        \"__id__\": \"name\",
+                        \"name\": \"Name\",
+                        \"visible\": false 
+                    },
+                    {
+                        \"description\": \"Movie Title\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"STRING\",
+                        \"__id__\": \"title\",
+                        \"name\": \"Movie Title\",
+                        \"visible\": false 
+                    },
+                    {
+                        \"description\": \"Theatre City\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"city\",
+                        \"name\": \"City\" 
+                    },
+                    {
+                        \"description\": \"Theatre Address\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"address\",
+                        \"name\": \"Address\" 
+                    },
+                    {
+                        \"description\": \"Theatre Country\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"country\",
+                        \"name\": \"Country\" 
+                    },
+                    {
+                        \"description\": \"Theatre Phone\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"phone\",
+                        \"name\": \"Phone\" 
+                    },
+                    {
+                        \"description\": \"Movie Length\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"length\",
+                        \"name\": \"Movie Length\" 
+                    },
+                    {
+                        \"description\": \"Movie Start Time\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"startTimes\",
+                        \"name\": \"Start Time\" 
+                    }
+                ],
+                \"connections\": [
+                    
+                ]                
+            },
+            {
+                \"serviceID\": \"3MBlfG16PvFqx8txM9J8SA\",
+               \"description\": \"News form FeddZilla by keyword order by date\",
+                \"serviceName\": \"FeedzillaKeyWord\",
+                \"serviceShortName\": \"FeedzillaKeyWord\",
+                \"icon\": \"Feedzilla\",
+                \"inputSignature\": [
+                    {
+                        \"__id__\": \"query\",
+                        \"dataType\": \"STRING\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"String\",
+                        \"description\": \"News Query\",
+                        \"default\": \"Java\",
+                        \"caption\": \"Query\" 
+                    }
+                ],
+                \"outputSignature\": [
+                    {
+                        \"description\": \"News URL\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"url\",
+                        \"name\": \"Url\",
+                        \"semanticType\": \"URL\"                          
+                    },
+                    {
+                        \"description\": \"News Title\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"title\",
+                        \"name\": \"Title\",
+                        \"semanticType\": \"String\"                          
+                    },
+                    {
+                        \"description\": \"News Summary\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"summary\",
+                        \"name\": \"Summary\",
+                        \"semanticType\": \"String\"                          
+                    },
+                    {
+                        \"description\": \"News Source\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"source\",
+                        \"name\": \"Source\",
+                        \"semanticType\": \"String\"                          
+                    },
+                    {
+                        \"description\": \"Publication Date\",
+                        \"dataType\": \"DATETIME\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"publish_date\",
+                        \"name\": \"Date\",
+                        \"semanticType\": \"Date\"                          
+                    }
+                ] 
+            },
+            
+            {
+                \"serviceID\": \"nskyWwa5FSKNEHmh5UJhSG\",
+               \"description\": \"News form YQL by keyword\",
+                \"serviceName\": \"YQLKeyWord\",
+                \"serviceShortName\": \"YQLKeyWord\",
+                \"icon\": \"Feedzilla\",
+                \"inputSignature\": [
+                    {
+                        \"__id__\": \"query\",
+                        \"dataType\": \"STRING\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"String\",
+                        \"description\": \"News Query\",
+                        \"default\": \"Java\",
+                        \"caption\": \"Query\" 
+                    }
+                ],
+                \"outputSignature\": [
+                    {
+                        \"description\": \"News URL\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"url\",
+                        \"name\": \"Url\",
+                        \"semanticType\": \"URL\"                          
+                    },
+                    {
+                        \"description\": \"News Title\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"title\",
+                        \"name\": \"Title\",
+                        \"semanticType\": \"String\"                          
+                    },
+                    {
+                        \"description\": \"News Summary\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"abstract\",
+                        \"name\": \"Summary\",
+                        \"semanticType\": \"String\"                          
+                    },
+                    {
+                        \"description\": \"News Source\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"source\",
+                        \"name\": \"Source\",
+                        \"semanticType\": \"String\"                          
+                    },
+                    {
+                        \"description\": \"Publication Date\",
+                        \"dataType\": \"DATETIME\",
+                        \"__type__\": \"attribute\",
+                        \"__id__\": \"date\",
+                        \"name\": \"Date\",
+                        \"semanticType\": \"Date\"                          
+                    }
+                ] 
+            },
+            
+            {
+                \"serviceID\": \"imdb_movies\",
+                \"serviceName\": \"IMDB Movies\",
+                \"serviceShortName\": \"IMDB Movies\",
+                \"icon\": \"movies.png\", 
+                \"description\": \"Movies as extracted by IMDB\",
+                \"inputSignature\":[
+                    {
+                        \"semanticType\": \"String\",
+                        \"default\": \"Drama\",
+                        \"description\": \"Movie Genre\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"Genre\",
+                        \"__id__\": \"iGenre\",                        
+                        \"type\": \"text\" 
+                    },
+                    {
+                        \"semanticType\": \"String\",
+                        \"default\": \"2010\",
+                        \"description\": \"Movie Production Year\",
+                        \"dataType\": \"INTEGER\",
+                        \"caption\": \"Year\",
+                        \"__id__\": \"iYear\",                        
+                        \"type\": \"text\"  
+                    }                   
+                ],
+                
+                \"outputSignature\": [                    
+                    {
+                        \"description\": \"Movie ID\",
+                        \"dataType\": \"INTEGER\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Integer\",                        
+                        \"__id__\": \"movieId\",
+                        \"name\": \"Movie ID\" 
+                    },
+                    {
+                        \"description\": \"Movie Title\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",                        
+                        \"__id__\": \"title\",
+                        \"name\": \"Title\" 
+                    },
+                    {
+                        \"description\": \"Director\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",                        
+                        \"__id__\": \"director\",
+                        \"name\": \"Director\" 
+                    },
+                    {
+                        \"description\": \"Movie Score\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Float\",                        
+                        \"__id__\": \"score\",
+                        \"name\": \"Score\" 
+                    },
+                    {
+                        \"description\": \"Movie Year\",
+                        \"dataType\": \"INTEGER\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Integer\",
+                        \"__id__\": \"year\",                        
+                        \"name\": \"Year\" 
+                    },
+                    {
+                        \"description\": \"Movie Language\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"language\",                        
+                        \"name\": \"Language\" 
+                    } 
+                ],
+                \"connections\": [                    
+                ]
+            },
+            
+            {
+                \"serviceID\": \"imdb_movies_by_title\",
+                \"serviceName\": \"IMDB Movies By Title\",
+                \"serviceShortName\": \"IMDB Movies By Titles\",
+                \"icon\": \"movies.png\", 
+                \"description\": \"Movies as extracted by IMDB\",
+                \"inputSignature\":[
+                    {
+                        \"semanticType\": \"String\",
+                        \"default\": \"\",
+                        \"description\": \"Movie Title\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"Title\",
+                        \"__id__\": \"iTitle\",                        
+                        \"type\": \"text\" 
+                    }                 
+                ],
+                
+                \"outputSignature\": [                    
+                    {
+                        \"description\": \"Movie ID\",
+                        \"dataType\": \"INTEGER\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Integer\",                        
+                        \"__id__\": \"movieId\",
+                        \"name\": \"Movie ID\" 
+                    },
+                    {
+                        \"description\": \"Movie Title\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",                        
+                        \"__id__\": \"title\",
+                        \"name\": \"Title\" 
+                    },
+                    {
+                        \"description\": \"Director\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",                        
+                        \"__id__\": \"director\",
+                        \"name\": \"Director\" 
+                    },
+                    {
+                        \"description\": \"Movie Score\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Float\",                        
+                        \"__id__\": \"score\",
+                        \"name\": \"Score\" 
+                    },
+                    {
+                        \"description\": \"Movie Year\",
+                        \"dataType\": \"INTEGER\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Integer\",
+                        \"__id__\": \"year\",                        
+                        \"name\": \"Year\" 
+                    },
+                    {
+                        \"description\": \"Movie Language\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"__id__\": \"language\",                        
+                        \"name\": \"Language\" 
+                    } 
+                ],
+                \"connections\": [                    
+                ]
+            },
+            
+            {                
+                \"serviceID\": \"hotel_by_zip\",
+                \"serviceName\": \"YQL Hotels\",
+                \"serviceShortName\": \"YQLHotels\",
+                \"icon\": \"hotels.png\",
+                \"description\": \"Hotels as extracted by YQL\",
+                \"outputSignature\": [
+                    {
+                        \"description\": \"Hotel Latitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLat\",
+                        \"range\": {
+                            \"max\": \"120.13\",
+                            \"min\": \"0.18\" 
+                        },
+                        \"__id__\": \"hotel-lat\",
+                        \"name\": \"Latitude\" 
+                    },
+                    {
+                        \"description\": \"Hotel Longitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLon\",
+                        \"range\": {
+                            \"max\": \"5000.13\",
+                            \"min\": \"0.18\" 
+                        },
+                        \"__id__\": \"hotel-lon\",
+                        \"name\": \"Longitude\" 
+                    },
+                    {
+                        \"description\": \"Hotel Rating\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Float\",
+                        \"range\": {
+                            \"max\": \"5\",
+                            \"min\": \"1\" 
+                        },
+                        \"__id__\": \"hotel-rating\",
+                        \"name\": \"Rating\" 
+                    },
+                    {
+                        \"description\": \"Hotel Type\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",
+                        \"range\": [
+                            \"Motel\",
+                            \"Hotel\",
+                            \"Residence\",
+                            \"Village\" 
+                        ],
+                        \"__id__\": \"hotel-type\",
+                        \"name\": \"Type\" 
+                    },
+                    {
+                        \"attributes\": [
+                            {
+                                \"dataType\": \"STRING\",
+                                \"semanticType\": \"String\",
+                                \"description\": \"Hotel service\",
+                                \"__id__\": \"hotel-service\",
+                                \"name\": \"Hotel Service\" 
+                            } 
+                        ],
+                        \"description\": \"List of hotel services\",
+                        \"__type__\": \"repeatingGroup\",
+                        \"__id__\": \"hotel-services\",
+                        \"name\": \"Hotel services\" 
+                    } 
+                ],
+                \"connections\": [                    
+                ]
+            },            
+            {
+                \"serviceID\": \"MDryTarqbXHMQ3ZGvTfVdC\",
+                \"serviceName\": \"YQL Restaurants\",
+                \"serviceShortName\": \"YQLRestaurants\",
+                \"icon\": \"hotels.png\",
+                \"description\": \"Restaurants as extracted by YQL\",
+                \"inputSignature\": [
+                    {
+                        \"__id__\": \"longitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"CoordLon\",
+                        \"description\": \"Restaurants Longitude\",
+                        \"default\": \"-73.961452\",
+                        \"caption\": \"Longitude\" 
+                    },
+                    {
+                        \"__id__\": \"latitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"CoordLat\",
+                        \"description\": \"Restaurants Latitude\",
+                        \"default\": \"40.714224\",
+                        \"caption\": \"Latitude\" 
+                    },
+                    {
+                        \"semanticType\": \"String\",
+                        \"default\": \"Pizzeria\",
+                        \"description\": \"Query String for Restaurant Search\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"Query\",
+                        \"__id__\": \"query\",                        
+                        \"type\": \"text\"  
+                    }                  
+                ],
+                \"outputSignature\": [
+                    {
+                        \"description\": \"Restaurant Latitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLat\",                        
+                        \"__id__\": \"Latitude\",
+                        \"name\": \"Latitude\" 
+                    },
+                    {
+                        \"description\": \"Restaurant Longitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLon\",                       
+                        \"__id__\": \"Longitude\",
+                        \"name\": \"Longitude\" 
+                    },
+                    {
+                        \"description\": \"Restaurant Average Rating\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",                        
+                        \"__id__\": \"Rating.AverageRating\",
+                        \"name\": \"Rating\" 
+                    },
+                    {
+                        \"description\": \"Restaurant Category\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",                        
+                        \"__id__\": \"Categories\",
+                        \"name\": \"Categories\" 
+                    },
+                    {
+                        \"description\": \"Restaurant Name\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",                        
+                        \"__id__\": \"Title\",
+                        \"name\": \"Name\" 
+                    },
+                    {
+                        \"description\": \"Restaurant Address\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",                        
+                        \"__id__\": \"Address\",
+                        \"name\": \"Address\" 
+                    },
+                    {
+                        \"description\": \"Restaurant City\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",                        
+                        \"__id__\": \"City\",
+                        \"name\": \"City\" 
+                    },
+                    {
+                        \"description\": \"Restaurant State\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",                        
+                        \"__id__\": \"State\",
+                        \"name\": \"State\" 
+                    },
+                    {
+                        \"description\": \"Restaurant Phone Number\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",                        
+                        \"__id__\": \"Phone\",
+                        \"name\": \"Phone\" 
+                    }                    
+                ],
+                \"connections\": [                   
+                ]                        
+            },
+            
+            {
+                \"serviceID\": \"vW6pcQQlQAKKpTLfZ5XPdK\",
+                \"serviceName\": \"YELP Restaurants\",
+                \"serviceShortName\": \"YelpRestaurants\",
+                \"icon\": \"hotels.png\",
+                \"description\": \"Restaurants as extracted by YELP\",
+                \"inputSignature\": [
+                    {
+                        \"__id__\": \"iLongitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"CoordLon\",
+                        \"description\": \"Restaurant Longitude\",
+                        \"default\": \"-73.961452\",
+                        \"caption\": \"Longitude\" 
+                    },
+                    {
+                        \"__id__\": \"iLatitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"CoordLat\",
+                        \"description\": \"Restaurant Latitude\",
+                        \"default\": \"40.714224\",
+                        \"caption\": \"Latitude\" 
+                    },
+                    {
+                        \"semanticType\": \"String\",
+                        \"default\": \"Italian\",
+                        \"description\": \"Query String for Restaurant Search\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"Query\",
+                        \"__id__\": \"iTerm\",                        
+                        \"type\": \"text\"  
+                    }                  
+                ],
+                \"outputSignature\": [
+                    {
+                        \"description\": \"Restaurant Latitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLat\",                        
+                        \"__id__\": \"latitude\",
+                        \"name\": \"Latitude\" 
+                    },
+                    {
+                        \"description\": \"Restaurant Longitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLon\",                       
+                        \"__id__\": \"longitude\",
+                        \"name\": \"Longitude\" 
+                    },
+                    {
+                        \"attributes\": [
+                            {
+                                \"dataType\": \"DECIMAL\",
+                                \"semanticType\": \"Float\",
+                                \"description\": \"Average Rating\",
+                                \"__id__\": \"avgRating\",
+                                \"name\": \"Avg Rating\" 
+                            }                           
+                        ],
+                        \"description\": \"Restaurant Ratings\",
+                        \"__type__\": \"repeatingGroup\",
+                        \"__id__\": \"rating\",
+                        \"name\": \"Rating\" 
+                    },
+                    {
+                        \"description\": \"Restaurant Category\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",                        
+                        \"__id__\": \"category\",
+                        \"name\": \"Category\" 
+                    },
+                    {
+                        \"description\": \"Restaurant Name\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",                        
+                        \"name\": \"Name\",
+                        \"__id__\": \"name\"
+                    },
+                    {
+                        \"description\": \"Restaurant Address\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",                        
+                        \"__id__\": \"address\",
+                        \"name\": \"Address\" 
+                    },
+                    {
+                        \"description\": \"Restaurant City\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",                        
+                        \"__id__\": \"city\",
+                        \"name\": \"City\" 
+                    },
+                    {
+                        \"description\": \"Restaurant State\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",                        
+                        \"__id__\": \"state\",
+                        \"name\": \"State\" 
+                    },
+                    {
+                        \"description\": \"Restaurant Phone Number\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",                        
+                        \"__id__\": \"phone\",
+                        \"name\": \"Phone\" 
+                    }                    
+                ],
+                \"connections\": [                   
+                ]                        
+            },
+            
+            {
+                \"serviceID\": \"caMuE4jhs5GihhxAdGK15F\",
+                \"serviceName\": \"YELP Hotels\",
+                \"serviceShortName\": \"YelpHotels\",
+                \"icon\": \"hotels.png\",
+                \"description\": \"Hotels as extracted by YELP\",
+                \"inputSignature\": [
+                    {
+                        \"__id__\": \"iLongitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"CoordLon\",
+                        \"description\": \"Hotel Longitude\",
+                        \"default\": \"-73.961452\",
+                        \"caption\": \"Longitude\" 
+                    },
+                    {
+                        \"__id__\": \"iLatitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"CoordLat\",
+                        \"description\": \"Hotel Latitude\",
+                        \"default\": \"40.714224\",
+                        \"caption\": \"Latitude\" 
+                    }                
+                ],
+                \"outputSignature\": [
+                    {
+                        \"description\": \"Hotel Latitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLat\",                        
+                        \"__id__\": \"latitude\",
+                        \"name\": \"Latitude\" 
+                    },
+                    {
+                        \"description\": \"Hotel Longitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLon\",                       
+                        \"__id__\": \"longitude\",
+                        \"name\": \"Longitude\" 
+                    },
+                    {
+                        \"attributes\": [
+                            {
+                                \"dataType\": \"STRING\",
+                                \"semanticType\": \"String\",
+                                \"description\": \"Category Name\",
+                                \"__id__\": \"name\",
+                                \"name\": \"Name\" 
+                            }                           
+                        ],
+                        \"description\": \"Hotel Categories\",
+                        \"__type__\": \"repeatingGroup\",
+                        \"__id__\": \"categories\",
+                        \"name\": \"Categories\" 
+                    },
+                    {
+                        \"description\": \"Hotel Name\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",                        
+                        \"name\": \"Name\",
+                        \"__id__\": \"name\"
+                    },
+                    {
+                        \"description\": \"Hotel Address\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",                        
+                        \"__id__\": \"address\",
+                        \"name\": \"Address\" 
+                    },
+                    {
+                        \"description\": \"Hotel City\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",                        
+                        \"__id__\": \"city\",
+                        \"name\": \"City\" 
+                    },
+                    {
+                        \"description\": \"Hotel State\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",                        
+                        \"__id__\": \"state\",
+                        \"name\": \"State\" 
+                    },
+                    {
+                        \"description\": \"Hotel URL\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"URL\",                        
+                        \"__id__\": \"url\",
+                        \"name\": \"URL\" 
+                    }                    
+                ],
+                \"connections\": [                   
+                ]                        
+            },
+            
+            {
+                \"serviceID\": \"DOUL8kDT2eJUbcIbWaRCIE\",
+                \"serviceName\": \"YQL Upcomings\",
+                \"serviceShortName\": \"YQL Upcoming\",
+                \"icon\": \"events.png\",
+                \"description\": \"Events as extracted by YQL Upcoming\",
+                \"inputSignature\": [
+                    {
+                        \"semanticType\": \"String\",
+                        \"default\": \"Rock\",
+                        \"description\": \"Search Text\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"Search\",
+                        \"__id__\": \"searchText\",                        
+                        \"type\": \"text\"  
+                    },
+                    {
+                        \"semanticType\": \"String\",
+                        \"default\": \"100\",
+                        \"description\": \"Radius\",
+                        \"dataType\": \"DECIMAL\",
+                        \"caption\": \"Radius\",
+                        \"__id__\": \"radius\",                        
+                        \"type\": \"text\"  
+                    },
+                    {
+                        \"semanticType\": \"Date\",
+                        \"default\": \"\",
+                        \"description\": \"Start Date\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"Min Date\",
+                        \"__id__\": \"minDate\",                        
+                        \"type\": \"date\"  
+                    },
+                    {
+                        \"semanticType\": \"Date\",
+                        \"default\": \"\",
+                        \"description\": \"End Date\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"Max Date\",
+                        \"__id__\": \"maxDate\",                        
+                        \"type\": \"date\"  
+                    },
+                    {
+                        \"semanticType\": \"String\",
+                        \"default\": \"New York\",
+                        \"description\": \"City\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"City\",
+                        \"__id__\": \"city\",                        
+                        \"type\": \"text\"  
+                    },
+                    {
+                        \"semanticType\": \"String\",
+                        \"default\": \"\",
+                        \"description\": \"Sort Type\",
+                        \"dataType\": \"STRING\",
+                        \"caption\": \"Sort\",
+                        \"__id__\": \"sortEvent\",                        
+                        \"type\": \"select\",
+                        \"options\": {
+                            \"distance\": {
+                                \"selected\": \"true\",
+                                \"value\": \"distance\" 
+                            },
+                            \"start_date\": \"Start Date\",
+                            \"start_time\": \"Start Time\",
+                            \"name\": \"Name\",
+                            \"venue_city\": \"City\",
+                            \"venue_name\": \"Venue Name\"
+                        } 
+                    }
+                ],
+                \"outputSignature\": [                                       
+                    {
+                        \"description\": \"Event Name\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",                        
+                        \"__id__\": \"Title\",
+                        \"name\": \"Name\" 
+                    },
+                    {
+                        \"description\": \"Event Distance\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Float\",                        
+                        \"__id__\": \"distance\",
+                        \"name\": \"Distance\" 
+                    },
+                    {
+                        \"description\": \"Event Latitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLat\",                        
+                        \"__id__\": \"latitude\",
+                        \"name\": \"Latitude\" 
+                    },
+                    {
+                        \"description\": \"Event Longitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"CoordLon\",                       
+                        \"__id__\": \"longitude\",
+                        \"name\": \"Longitude\" 
+                    },
+                    {
+                        \"description\": \"Event Date\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Date\",                        
+                        \"__id__\": \"start_date\",
+                        \"name\": \"Date\" 
+                    },
+                    {
+                        \"description\": \"Event Time\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Time\",                        
+                        \"__id__\": \"start_time\",
+                        \"name\": \"Time\" 
+                    },
+                    {
+                        \"description\": \"Event Address\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",                        
+                        \"__id__\": \"venue_address\",
+                        \"name\": \"Address\" 
+                    },
+                    {
+                        \"description\": \"Event City\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",                        
+                        \"__id__\": \"venue_city\",
+                        \"name\": \"City\" 
+                    },
+                    {
+                        \"description\": \"Venue Name\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"String\",                        
+                        \"__id__\": \"venue_name\",
+                        \"name\": \"Name\" 
+                    },
+                    {
+                        \"description\": \"Photo URL\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"URL\",                        
+                        \"__id__\": \"photo_url\",
+                        \"name\": \"Photo\" 
+                    }                    
+                ],
+                \"connections\": [                   
+                ]                        
+            },
+            
+            {
+                \"serviceID\": \"0I5AEcArReK3N3dZHbZyeA\",
+                \"description\": \"InfoChimps By Coordinates\",
+                \"serviceName\": \"InfoChimps By Coordinates\",
+                \"serviceShortName\": \"InfoChimpsByCoord\",
+                \"icon\": \"Zillow\",
+                \"inputSignature\": [
+                    {
+                        \"__id__\": \"longitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"CoordLon\",
+                        \"description\": \"Query Longitude\",
+                        \"default\": \"-73.961452\",
+                        \"caption\": \"Longitude\" 
+                    },
+                    {
+                        \"__id__\": \"latitude\",
+                        \"dataType\": \"DECIMAL\",
+                        \"type\": \"text\",
+                        \"semanticType\": \"CoordLat\",
+                        \"description\": \"Query Latitude\",
+                        \"default\": \"40.714224\",
+                        \"caption\": \"Latitude\" 
+                    }
+                ],
+                \"outputSignature\": [
+                    {
+                        \"description\": \"ZIP Code\",
+                        \"dataType\": \"STRING\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"ZIP\",                        
+                        \"__id__\": \"zip\",
+                        \"name\": \"ZIP Code\" 
+                    },
+                    {
+                        \"description\": \"Population\",
+                        \"dataType\": \"INTEGER\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Integer\",                        
+                        \"__id__\": \"population\",
+                        \"name\": \"Population\" 
+                    },
+                    {
+                        \"description\": \"Percentage Under 18\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Float\",                        
+                        \"__id__\": \"percent_under_18\",
+                        \"name\": \"/% Under18\" 
+                    },
+                    {
+                        \"description\": \"Percentage Over 65\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Float\",                        
+                        \"__id__\": \"percent_over_65\",
+                        \"name\": \"/% Over 65\" 
+                    },
+                    {
+                        \"description\": \"Percentage Female\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Float\",                        
+                        \"__id__\": \"percent_female\",
+                        \"name\": \"/% Female\" 
+                    },
+                    {
+                        \"description\": \"Percentage White\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Float\",                        
+                        \"__id__\": \"percent_white\",
+                        \"name\": \"/% White\" 
+                    },
+                    {
+                        \"description\": \"Percentage Black\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Float\",                        
+                        \"__id__\": \"percent_black\",
+                        \"name\": \"/% Black\" 
+                    },
+                    {
+                        \"description\": \"Percentage Asian\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Float\",                        
+                        \"__id__\": \"percent_asian\",
+                        \"name\": \"/% Asian\" 
+                    },
+                    {
+                        \"description\": \"Percentage Hispanic\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Float\",                        
+                        \"__id__\": \"percent_hispanic\",
+                        \"name\": \"/% Hispanic\" 
+                    },
+                    {
+                        \"description\": \"Percentage High School Graduate\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Float\",                        
+                        \"__id__\": \"percent_hs_graduate\",
+                        \"name\": \"/% HS Graduate\" 
+                    },                    
+                    {
+                        \"description\": \"Percentage Bachelor Graduate\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Float\",                        
+                        \"__id__\": \"percent_bs_graduate\",
+                        \"name\": \"/% BS Graduate\" 
+                    }, 
+                    {
+                        \"description\": \"Percentage Below Poverty\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Float\",                        
+                        \"__id__\": \"percent_below_poverty\",
+                        \"name\": \"/% Below Poverty\" 
+                    },   
+                    {
+                        \"description\": \"Work Travel Time\",
+                        \"dataType\": \"DECIMAL\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Float\",                        
+                        \"__id__\": \"work_travel_time\",
+                        \"name\": \"/% Below Poverty\" 
+                    },                    
+                    {
+                        \"description\": \"Pro Capita Income\",
+                        \"dataType\": \"INTEGER\",
+                        \"__type__\": \"attribute\",
+                        \"semanticType\": \"Float\",                        
+                        \"__id__\": \"per_capita_incomee\",
+                        \"name\": \"Pro Capita Income\" 
+                    }
+                ]
+            }
+        ] 
+    }
+}"</string>
+    
+    
+    
+    
+    
+    
+    <string name="select_tuple">Select</string>
+</resources>

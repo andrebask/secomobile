@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center">
+    <TextView style="@style/HomeTitle" android:layout_height="wrap_content" android:id="@+id/ProgressTitle" android:text="@string/progress_title" android:layout_width="match_parent" android:gravity="center"></TextView>
+    <TextView style="@style/ProgressMessage" android:layout_height="wrap_content" android:text="@string/progress_message" android:id="@+id/ProgressMessage" android:layout_width="match_parent" android:gravity="center"></TextView>
+    <ProgressBar  android:max="100" android:id="@+id/ProgressBar"  android:layout_height="wrap_content" android:layout_width="wrap_content"></ProgressBar>
+</LinearLayout>
